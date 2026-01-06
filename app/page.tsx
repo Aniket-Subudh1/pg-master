@@ -3,29 +3,36 @@ import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#84DEFF] via-[#D3ECFF] to-white font-sans">
+    <div className="min-h-screen bg-gradient-to-b from-[#84DEFF] via-[#D3ECFF] to-white">
       <Navbar />
       
-      {/* Hero Section */}
       <main className="flex flex-col items-center pt-32 pb-20 px-6">
-        {/* Main Heading */}
-        <h1 className="text-center text-[#0F0F0F] font-bold text-[75px] leading-[78.75px] tracking-[-2px] max-w-[893px] mb-6">
+        <h1 
+          className="font-fustat text-center text-[#0F0F0F] font-bold text-[75px] leading-[78.75px] max-w-[893px] mb-6"
+          style={{ letterSpacing: '-2px' }}
+        >
           India's #1 Renting Super App for PG & Hostels
         </h1>
 
-        {/* Subheading */}
-        <p className="text-center text-[#5D5B63] font-normal text-[20px] leading-[30.6px] tracking-[-1px] max-w-[467px] mb-2">
+        <p 
+          className="font-inter text-center text-[#5D5B63] font-normal text-[20px] leading-[30.6px] max-w-[467px] mb-2"
+          style={{ letterSpacing: '-1px' }}
+        >
           Effortlessly manage your PG or hostel with PGMASTER
         </p>
 
-        {/* Description */}
-        <p className="text-center text-[#5D5B63] font-normal text-[20px] leading-[30.6px] tracking-[-1px] max-w-[936px] mb-8">
+        <p 
+          className="font-inter text-center text-[#5D5B63] font-normal text-[20px] leading-[30.6px] max-w-[936px] mb-8"
+          style={{ letterSpacing: '-1px' }}
+        >
           From rent collection and tenant management to maintenance and analytics, everything you need is in one app.
         </p>
 
-        {/* CTA Button */}
-        <button className="flex items-center gap-2 bg-[#0F8BFF] text-white px-6 py-3.5 rounded-2xl font-normal text-base hover:bg-[#0d7ae6] hover:shadow-[0_4px_4px_0_rgba(255,255,255,0.35)_inset] transition-all duration-200 shadow-[0_4px_4px_0_rgba(255,255,255,0.35)_inset] mb-8">
-          <span style={{ letterSpacing: '-0.5px', lineHeight: '27.2px' }}>Request a Demo</span>
+        <button 
+          className="font-inter flex items-center gap-2 bg-[#0F8BFF] text-white px-6 py-3.5 rounded-2xl font-normal text-[16px] hover:bg-[#0d7ae6] hover:shadow-[0_4px_4px_0_rgba(255,255,255,0.35)_inset] transition-all duration-200 shadow-[0_4px_4px_0_rgba(255,255,255,0.35)_inset] mb-8"
+          style={{ letterSpacing: '-0.5px', lineHeight: '27.2px' }}
+        >
+          Request a Demo
           <div className="flex items-center justify-center w-[27px] h-[27px] rounded-full bg-white">
             <svg
               width="16"
@@ -45,9 +52,12 @@ export default function Home() {
           </div>
         </button>
 
-        {/* Rating */}
-        <div className="flex items-center gap-2 mb-12">
-          <span className="text-[#0F0F0F] font-medium text-base" style={{ letterSpacing: '-0.5px', lineHeight: '27.2px' }}>
+        {/* Rating - Inter Medium 500, 16px */}
+        <div className="font-inter flex items-center gap-2 mb-12">
+          <span 
+            className="text-[#0F0F0F] font-medium text-[16px]"
+            style={{ letterSpacing: '-0.5px', lineHeight: '27.2px' }}
+          >
             Rated 4.9/5 by 2,000+ PG owners & operators
           </span>
           <div className="flex gap-0.5">
@@ -74,7 +84,7 @@ export default function Home() {
 
         {/* Phone Mockups */}
         <div className="flex items-center justify-center gap-6 mb-16">
-          {/* Left Phone */}
+          {/* Left Phone - 273×561px */}
           <div className="w-[273px] h-[561px] relative">
             <Image
               src="/2.png"
@@ -82,10 +92,11 @@ export default function Home() {
               width={273}
               height={561}
               className="object-contain"
+              priority
             />
           </div>
 
-          {/* Center Phone */}
+          {/* Center Phone - 322×662px */}
           <div className="w-[322px] h-[662px] relative">
             <Image
               src="/1.png"
@@ -93,10 +104,11 @@ export default function Home() {
               width={322}
               height={662}
               className="object-contain"
+              priority
             />
           </div>
 
-          {/* Right Phone */}
+          {/* Right Phone - 271×558px */}
           <div className="w-[271px] h-[558px] relative">
             <Image
               src="/3.png"
@@ -104,59 +116,62 @@ export default function Home() {
               width={271}
               height={558}
               className="object-contain"
+              priority
             />
           </div>
         </div>
 
-        {/* Trust Badges */}
+        {/* Trust Badges - Using PNG Logos */}
         <div className="flex flex-col items-center">
-          <div className="flex items-center gap-8 mb-4">
-            {/* ZenZap */}
-            <div className="flex items-center gap-1">
-              <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8 0L10 7L15 8L9 13L11 20L8 16L5 20L7 13L1 8L6 7L8 0Z" fill="#000000"/>
-              </svg>
-              <span className="text-black font-semibold text-sm">ZenZap</span>
-            </div>
+          <div className="flex items-center justify-center gap-8 mb-4 flex-wrap">
+            {/* ZenZap Logo */}
+            <Image
+              src="/4.png"
+              alt="ZenZap"
+              width={80}
+              height={24}
+              className="object-contain h-6 w-auto"
+            />
 
-            {/* sparkle */}
-            <div className="flex items-center gap-1">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="8" cy="8" r="6" fill="#FF6B9D"/>
-                <circle cx="8" cy="8" r="3" fill="#FFE5EE"/>
-              </svg>
-              <span className="text-black font-semibold text-sm">sparkle</span>
-            </div>
+            {/* sparkle Logo */}
+            <Image
+              src="/5.png"
+              alt="sparkle"
+              width={80}
+              height={24}
+              className="object-contain h-6 w-auto"
+            />
 
-            {/* Craftgram */}
-            <div className="flex items-center gap-1">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8 1L9.5 5L14 6L10 10L11 15L8 12L5 15L6 10L2 6L6.5 5L8 1Z" fill="#000000"/>
-              </svg>
-              <span className="text-black font-semibold text-sm">Craftgram</span>
-            </div>
+            {/* Craftgram Logo */}
+            <Image
+              src="/6.png"
+              alt="Craftgram"
+              width={90}
+              height={24}
+              className="object-contain h-6 w-auto"
+            />
 
-            {/* Pulse */}
-            <div className="flex items-center gap-1">
-              <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="3" height="12" y="2" fill="#000000"/>
-                <rect x="5" width="3" height="16" fill="#000000"/>
-                <rect x="10" y="4" width="3" height="12" fill="#000000"/>
-                <rect x="15" y="6" width="3" height="10" fill="#000000"/>
-              </svg>
-              <span className="text-black font-semibold text-sm">Pulse</span>
-            </div>
+            {/* Pulse Logo */}
+            <Image
+              src="/7.png"
+              alt="Pulse"
+              width={70}
+              height={24}
+              className="object-contain h-6 w-auto"
+            />
 
-            {/* swift */}
-            <div className="flex items-center gap-1">
-              <span className="text-black font-semibold text-sm italic">swift</span>
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 6L9 6M9 6L6 3M9 6L6 9" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            </div>
+            {/* swift Logo */}
+            <Image
+              src="/8.png"
+              alt="swift"
+              width={60}
+              height={24}
+              className="object-contain h-6 w-auto"
+            />
           </div>
 
-          <p className="text-[#0F0F0F] text-sm font-normal">
+          {/* Trust Text - Inter Regular 400, 14px */}
+          <p className="font-inter text-[#0F0F0F] text-[14px] font-normal">
             Trusted by Leading PG & Rental Businesses
           </p>
         </div>
