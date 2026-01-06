@@ -6,14 +6,14 @@ export default function SolutionsSection() {
       <div className="max-w-[1200px] mx-auto relative">
         {/* Main Heading */}
         <h2 
-          className="font-fustat text-center text-[#0F0F0F] font-bold text-[32px] sm:text-[40px] lg:text-[48px] leading-[38.4px] sm:leading-[48px] lg:leading-[57.6px] mb-2 sm:mb-3 px-2 relative z-10"
+          className="font-fustat text-center text-[#0F0F0F] font-bold text-[28px] sm:text-[40px] lg:text-[48px] leading-[34px] sm:leading-[48px] lg:leading-[57.6px] mb-2 sm:mb-3 px-2 relative z-10"
           style={{ letterSpacing: '-2px' }}
         >
           Fix These Problems Now
         </h2>
 
         <p 
-          className="font-inter text-center text-[#5D5B63] font-normal text-[14px] sm:text-[16px] leading-[23.8px] sm:leading-[27.2px] mb-10 sm:mb-14 lg:mb-16 px-4 relative z-10"
+          className="font-inter text-center text-[#5D5B63] font-normal text-[14px] sm:text-[16px] leading-[22px] sm:leading-[27.2px] mb-10 sm:mb-14 lg:mb-16 px-4 relative z-10"
           style={{ letterSpacing: '-0.5px' }}
         >
           <span className="font-bold text-[#0F0F0F]">PGMASTER</span> helps you manage everything in one place, without daily stress.
@@ -33,22 +33,22 @@ export default function SolutionsSection() {
         <div className="flex flex-col gap-6 sm:gap-8 lg:gap-10 relative z-10 max-w-[1050px] mx-auto">
           
           {/* Feature 1 - Smart Rent Automation */}
-          <div className="w-full bg-white rounded-[40px] overflow-hidden shadow-sm">
+          <div className="w-full bg-white rounded-[24px] lg:rounded-[40px] overflow-hidden shadow-sm">
             <div className="flex flex-col lg:flex-row items-stretch">
               {/* Left Content */}
-              <div className="flex-1 p-8 sm:p-10 lg:p-12 lg:pr-6 bg-white">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 flex mb-4 sm:mb-5">
+              <div className="flex-1 p-6 sm:p-10 lg:p-12 lg:pr-6 bg-white">
+                <div className="w-10 h-10 sm:w-14 sm:h-14 flex mb-3 sm:mb-5">
                   <Image
                     src="/logo.png"
                     alt="Home Icon"
                     width={56}
                     height={56}
-                    className="w-12 h-12 sm:w-14 sm:h-14"
+                    className="w-10 h-10 sm:w-14 sm:h-14"
                   />
                 </div>
 
                 <h3 
-                  className="font-fustat text-[#0F0F0F] font-bold text-[26px] sm:text-[32px] lg:text-[36px] leading-[32px] sm:leading-[38px] lg:leading-[43px] mb-4 sm:mb-5"
+                  className="font-fustat text-[#0F0F0F] font-bold text-[24px] sm:text-[32px] lg:text-[36px] leading-[30px] sm:leading-[38px] lg:leading-[43px] mb-3 sm:mb-5"
                   style={{ letterSpacing: '-0.5px' }}
                 >
                   Effortless<br />
@@ -56,58 +56,53 @@ export default function SolutionsSection() {
                 </h3>
 
                 <p 
-                  className="font-inter text-[#5D5B63] font-normal text-[14px] sm:text-[15px] lg:text-[16px] leading-[24px] sm:leading-[25.5px] lg:leading-[27.2px] mb-6 sm:mb-7"
+                  className="font-inter text-[#5D5B63] font-normal text-[14px] sm:text-[15px] lg:text-[16px] leading-[22px] sm:leading-[25.5px] lg:leading-[27.2px] mb-5 sm:mb-7"
                   style={{ letterSpacing: '-0.56px' }}
                 >
-                  Manage monthly rent, dues, and penalties automatically<br className="hidden sm:block" />
-                  so you don't have to chase tenants anymore.
+                  Manage monthly rent, dues, and penalties automatically so you don't have to chase tenants anymore.
                 </p>
 
-                <ul className="space-y-3.5 sm:space-y-4 mb-7 sm:mb-8">
+                <ul className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
                   <li className="flex items-start gap-2.5">
                     <div className="w-5 h-5 rounded-full bg-[#0F0F0F] flex items-center justify-center flex-shrink-0 mt-0.5">
                       <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 4L3.5 6.5L9 1" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>
                     </div>
-                    <span className="font-inter text-[#0F0F0F] font-normal text-[14px] sm:text-[15px] leading-[23.8px] sm:leading-[25.5px]" style={{ letterSpacing: '-0.56px' }}>
+                    <span className="font-inter text-[#0F0F0F] font-normal text-[13px] sm:text-[15px] leading-[21px] sm:leading-[25.5px]" style={{ letterSpacing: '-0.56px' }}>
                       Automatic monthly rent & bill generation
                     </span>
                   </li>
                   <li className="flex items-start gap-2.5">
                     <div className="w-5 h-5 rounded-full bg-[#0F0F0F] flex items-center justify-center flex-shrink-0 mt-0.5">
                       <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 4L3.5 6.5L9 1" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>
                     </div>
-                    <span className="font-inter text-[#0F0F0F] font-normal text-[14px] sm:text-[15px] leading-[23.8px] sm:leading-[25.5px]" style={{ letterSpacing: '-0.56px' }}>
+                    <span className="font-inter text-[#0F0F0F] font-normal text-[13px] sm:text-[15px] leading-[21px] sm:leading-[25.5px]" style={{ letterSpacing: '-0.56px' }}>
                       Smart reminders via app & WhatsApp
                     </span>
                   </li>
                   <li className="flex items-start gap-2.5">
                     <div className="w-5 h-5 rounded-full bg-[#0F0F0F] flex items-center justify-center flex-shrink-0 mt-0.5">
                       <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 4L3.5 6.5L9 1" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>
                     </div>
-                    <span className="font-inter text-[#0F0F0F] font-normal text-[14px] sm:text-[15px] leading-[23.8px] sm:leading-[25.5px]" style={{ letterSpacing: '-0.56px' }}>
+                    <span className="font-inter text-[#0F0F0F] font-normal text-[13px] sm:text-[15px] leading-[21px] sm:leading-[25.5px]" style={{ letterSpacing: '-0.56px' }}>
                       Clear paid, pending, and overdue status
                     </span>
                   </li>
                   <li className="flex items-start gap-2.5">
                     <div className="w-5 h-5 rounded-full bg-[#0F0F0F] flex items-center justify-center flex-shrink-0 mt-0.5">
                       <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 4L3.5 6.5L9 1" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>
                     </div>
-                    <span className="font-inter text-[#0F0F0F] font-normal text-[14px] sm:text-[15px] leading-[23.8px] sm:leading-[25.5px]" style={{ letterSpacing: '-0.56px' }}>
+                    <span className="font-inter text-[#0F0F0F] font-normal text-[13px] sm:text-[15px] leading-[21px] sm:leading-[25.5px]" style={{ letterSpacing: '-0.56px' }}>
                       Late fee added automatically after due date
                     </span>
                   </li>
                 </ul>
 
                 <button
-                  className="font-inter flex items-center gap-2 bg-[#0F8BFF] text-white px-6 py-3 rounded-xl font-normal text-[14px] sm:text-[15px] hover:bg-[#0d7ae6] transition-all duration-200"
+                  className="font-inter flex items-center gap-2 bg-[#0F8BFF] text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl font-normal text-[14px] sm:text-[15px] hover:bg-[#0d7ae6] transition-all duration-200"
                   style={{ 
                     letterSpacing: "-0.5px", 
                     lineHeight: "27.2px",
@@ -136,20 +131,12 @@ export default function SolutionsSection() {
               </div>
 
               {/* Right Image Section with Gradient Container */}
-              <div className="flex-1 relative flex top-20 left-4 items-center justify-center p-8 sm:p-10 lg:p-12 lg:pl-6">
-                {/* Gradient background positioned with top-left radius */}
+              <div className="flex-1 relative flex lg:top-20 lg:left-4 items-center justify-center p-6 sm:p-10 lg:p-12 lg:pl-6">
+                {/* Gradient background */}
                 <div 
-                  className="absolute w-[514.8px] h-[544.97px]"
-                  style={{
-                    backgroundColor: "#F7F1FF",
-                    borderTopLeftRadius: "40px",
-                    top: 0,
-                    left: 0,
-                    right: 0,
-                    bottom: 0
-                  }}
+                  className="absolute inset-0 bg-[#F7F1FF] rounded-b-[24px] lg:rounded-b-none lg:rounded-tl-[40px]"
                 />
-                <div className="w-full max-w-[415px] relative z-10">
+                <div className="w-full max-w-[300px] sm:max-w-[350px] lg:max-w-[415px] relative z-10">
                   <Image
                     src="/f1.png"
                     alt="Smart Rent Automation Dashboard"
@@ -163,22 +150,22 @@ export default function SolutionsSection() {
           </div>
 
           {/* Feature 2 - Complete Tenant & Accounting Control */}
-          <div className="w-full bg-white rounded-[40px] overflow-hidden shadow-sm">
+          <div className="w-full bg-white rounded-[24px] lg:rounded-[40px] overflow-hidden shadow-sm">
             <div className="flex flex-col lg:flex-row-reverse items-stretch">
               {/* Right Content */}
-              <div className="flex-1 p-8 sm:p-10 lg:p-12 lg:pl-6 bg-white">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 flex mb-4 sm:mb-5">
+              <div className="flex-1 p-6 sm:p-10 lg:p-12 lg:pl-6 bg-white">
+                <div className="w-10 h-10 sm:w-14 sm:h-14 flex mb-3 sm:mb-5">
                   <Image
                     src="/logo.png"
                     alt="Home Icon"
                     width={56}
                     height={56}
-                    className="w-12 h-12 sm:w-14 sm:h-14"
+                    className="w-10 h-10 sm:w-14 sm:h-14"
                   />
                 </div>
 
                 <h3 
-                  className="font-fustat text-[#0F0F0F] font-bold text-[26px] sm:text-[32px] lg:text-[36px] leading-[32px] sm:leading-[38px] lg:leading-[43px] mb-4 sm:mb-5"
+                  className="font-fustat text-[#0F0F0F] font-bold text-[24px] sm:text-[32px] lg:text-[36px] leading-[30px] sm:leading-[38px] lg:leading-[43px] mb-3 sm:mb-5"
                   style={{ letterSpacing: '-0.5px' }}
                 >
                   Complete Tenant<br />
@@ -186,58 +173,53 @@ export default function SolutionsSection() {
                 </h3>
 
                 <p 
-                  className="font-inter text-[#5D5B63] font-normal text-[14px] sm:text-[15px] lg:text-[16px] leading-[24px] sm:leading-[25.5px] lg:leading-[27.2px] mb-6 sm:mb-7"
+                  className="font-inter text-[#5D5B63] font-normal text-[14px] sm:text-[15px] lg:text-[16px] leading-[22px] sm:leading-[25.5px] lg:leading-[27.2px] mb-5 sm:mb-7"
                   style={{ letterSpacing: '-0.56px' }}
                 >
-                  All tenant and money records in one place, always up to date.<br className="hidden sm:block" />
-                  From tenant details to income and expense tracking .
+                  All tenant and money records in one place, always up to date. From tenant details to income and expense tracking.
                 </p>
 
-                <ul className="space-y-3.5 sm:space-y-4 mb-7 sm:mb-8">
+                <ul className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
                   <li className="flex items-start gap-2.5">
                     <div className="w-5 h-5 rounded-full bg-[#0F0F0F] flex items-center justify-center flex-shrink-0 mt-0.5">
                       <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 4L3.5 6.5L9 1" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>
                     </div>
-                    <span className="font-inter text-[#0F0F0F] font-normal text-[14px] sm:text-[15px] leading-[23.8px] sm:leading-[25.5px]" style={{ letterSpacing: '-0.56px' }}>
+                    <span className="font-inter text-[#0F0F0F] font-normal text-[13px] sm:text-[15px] leading-[21px] sm:leading-[25.5px]" style={{ letterSpacing: '-0.56px' }}>
                       Quick tenant onboarding with eKYC
                     </span>
                   </li>
                   <li className="flex items-start gap-2.5">
                     <div className="w-5 h-5 rounded-full bg-[#0F0F0F] flex items-center justify-center flex-shrink-0 mt-0.5">
                       <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 4L3.5 6.5L9 1" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>
                     </div>
-                    <span className="font-inter text-[#0F0F0F] font-normal text-[14px] sm:text-[15px] leading-[23.8px] sm:leading-[25.5px]" style={{ letterSpacing: '-0.56px' }}>
+                    <span className="font-inter text-[#0F0F0F] font-normal text-[13px] sm:text-[15px] leading-[21px] sm:leading-[25.5px]" style={{ letterSpacing: '-0.56px' }}>
                       Tenant profiles with payment history
                     </span>
                   </li>
                   <li className="flex items-start gap-2.5">
                     <div className="w-5 h-5 rounded-full bg-[#0F0F0F] flex items-center justify-center flex-shrink-0 mt-0.5">
                       <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 4L3.5 6.5L9 1" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>
                     </div>
-                    <span className="font-inter text-[#0F0F0F] font-normal text-[14px] sm:text-[15px] leading-[23.8px] sm:leading-[25.5px]" style={{ letterSpacing: '-0.56px' }}>
+                    <span className="font-inter text-[#0F0F0F] font-normal text-[13px] sm:text-[15px] leading-[21px] sm:leading-[25.5px]" style={{ letterSpacing: '-0.56px' }}>
                       Real-time income & expense tracking
                     </span>
                   </li>
                   <li className="flex items-start gap-2.5">
                     <div className="w-5 h-5 rounded-full bg-[#0F0F0F] flex items-center justify-center flex-shrink-0 mt-0.5">
                       <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 4L3.5 6.5L9 1" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>
                     </div>
-                    <span className="font-inter text-[#0F0F0F] font-normal text-[14px] sm:text-[15px] leading-[23.8px] sm:leading-[25.5px]" style={{ letterSpacing: '-0.56px' }}>
+                    <span className="font-inter text-[#0F0F0F] font-normal text-[13px] sm:text-[15px] leading-[21px] sm:leading-[25.5px]" style={{ letterSpacing: '-0.56px' }}>
                       One view to manage multiple PGs and properties
                     </span>
                   </li>
                 </ul>
 
                 <button
-                  className="font-inter flex items-center gap-2 bg-[#0F8BFF] text-white px-6 py-3 rounded-xl font-normal text-[14px] sm:text-[15px] hover:bg-[#0d7ae6] transition-all duration-200"
+                  className="font-inter flex items-center gap-2 bg-[#0F8BFF] text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl font-normal text-[14px] sm:text-[15px] hover:bg-[#0d7ae6] transition-all duration-200"
                   style={{ 
                     letterSpacing: "-0.5px", 
                     lineHeight: "27.2px",
@@ -266,20 +248,12 @@ export default function SolutionsSection() {
               </div>
 
               {/* Left Image Section with Gradient Container */}
-              <div className="flex-1 relative flex top-20 items-center justify-center p-8 sm:p-10 lg:p-12 lg:pr-6">
-                {/* Gradient background positioned with top-right radius */}
+              <div className="flex-1 relative flex lg:top-20 items-center justify-center p-6 sm:p-10 lg:p-12 lg:pr-6">
+                {/* Gradient background */}
                 <div 
-                  className="absolute w-[510px] h-[541px]"
-                  style={{
-                    backgroundColor: "#F3FAFF",
-                    borderTopRightRadius: "40px",
-                    top: 0,
-                    left: 0,
-                    right: 0,
-                    bottom: 0
-                  }}
+                  className="absolute inset-0 bg-[#F3FAFF] rounded-b-[24px] lg:rounded-b-none lg:rounded-tr-[40px]"
                 />
-                <div className="w-full max-w-[410px] relative z-10">
+                <div className="w-full max-w-[300px] sm:max-w-[350px] lg:max-w-[410px] relative z-10">
                   <Image
                     src="/f2.png"
                     alt="Tenant & Accounting Dashboard"
@@ -293,22 +267,22 @@ export default function SolutionsSection() {
           </div>
 
           {/* Feature 3 - Properties, Rooms & Complaints */}
-          <div className="w-full bg-white rounded-[40px] overflow-hidden shadow-sm">
+          <div className="w-full bg-white rounded-[24px] lg:rounded-[40px] overflow-hidden shadow-sm">
             <div className="flex flex-col lg:flex-row items-stretch">
               {/* Left Content */}
-              <div className="flex-1 p-8 sm:p-10 lg:p-12 lg:pr-6 bg-white">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 flex mb-4 sm:mb-5">
+              <div className="flex-1 p-6 sm:p-10 lg:p-12 lg:pr-6 bg-white">
+                <div className="w-10 h-10 sm:w-14 sm:h-14 flex mb-3 sm:mb-5">
                   <Image
                     src="/logo.png"
                     alt="Home Icon"
                     width={56}
                     height={56}
-                    className="w-12 h-12 sm:w-14 sm:h-14"
+                    className="w-10 h-10 sm:w-14 sm:h-14"
                   />
                 </div>
 
                 <h3 
-                  className="font-fustat text-[#0F0F0F] font-bold text-[26px] sm:text-[32px] lg:text-[36px] leading-[32px] sm:leading-[38px] lg:leading-[43px] mb-4 sm:mb-5"
+                  className="font-fustat text-[#0F0F0F] font-bold text-[24px] sm:text-[32px] lg:text-[36px] leading-[30px] sm:leading-[38px] lg:leading-[43px] mb-3 sm:mb-5"
                   style={{ letterSpacing: '-0.5px' }}
                 >
                   Properties, Rooms &<br />
@@ -316,59 +290,53 @@ export default function SolutionsSection() {
                 </h3>
 
                 <p 
-                  className="font-inter text-[#5D5B63] font-normal text-[14px] sm:text-[15px] lg:text-[16px] leading-[24px] sm:leading-[25.5px] lg:leading-[27.2px] mb-6 sm:mb-7"
+                  className="font-inter text-[#5D5B63] font-normal text-[14px] sm:text-[15px] lg:text-[16px] leading-[22px] sm:leading-[25.5px] lg:leading-[27.2px] mb-5 sm:mb-7"
                   style={{ letterSpacing: '-0.56px' }}
                 >
-                  Manage all your PG properties without confusion or manual .<br className="hidden sm:block" />
-                  Get a clear view of rooms, beds, tenants, and complaints across<br className="hidden sm:block" />
-                  all properties - directly from your phone.
+                  Manage all your PG properties without confusion or manual work. Get a clear view of rooms, beds, tenants, and complaints across all properties - directly from your phone.
                 </p>
 
-                <ul className="space-y-3.5 sm:space-y-4 mb-7 sm:mb-8">
+                <ul className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
                   <li className="flex items-start gap-2.5">
                     <div className="w-5 h-5 rounded-full bg-[#0F0F0F] flex items-center justify-center flex-shrink-0 mt-0.5">
                       <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 4L3.5 6.5L9 1" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>
                     </div>
-                    <span className="font-inter text-[#0F0F0F] font-normal text-[14px] sm:text-[15px] leading-[23.8px] sm:leading-[25.5px]" style={{ letterSpacing: '-0.56px' }}>
+                    <span className="font-inter text-[#0F0F0F] font-normal text-[13px] sm:text-[15px] leading-[21px] sm:leading-[25.5px]" style={{ letterSpacing: '-0.56px' }}>
                       Real-time room & bed occupancy and vacancy status
                     </span>
                   </li>
                   <li className="flex items-start gap-2.5">
                     <div className="w-5 h-5 rounded-full bg-[#0F0F0F] flex items-center justify-center flex-shrink-0 mt-0.5">
                       <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 4L3.5 6.5L9 1" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>
                     </div>
-                    <span className="font-inter text-[#0F0F0F] font-normal text-[14px] sm:text-[15px] leading-[23.8px] sm:leading-[25.5px]" style={{ letterSpacing: '-0.56px' }}>
+                    <span className="font-inter text-[#0F0F0F] font-normal text-[13px] sm:text-[15px] leading-[21px] sm:leading-[25.5px]" style={{ letterSpacing: '-0.56px' }}>
                       Easy tenant shifting between rooms or properties
                     </span>
                   </li>
                   <li className="flex items-start gap-2.5">
                     <div className="w-5 h-5 rounded-full bg-[#0F0F0F] flex items-center justify-center flex-shrink-0 mt-0.5">
                       <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 4L3.5 6.5L9 1" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>
                     </div>
-                    <span className="font-inter text-[#0F0F0F] font-normal text-[14px] sm:text-[15px] leading-[23.8px] sm:leading-[25.5px]" style={{ letterSpacing: '-0.56px' }}>
+                    <span className="font-inter text-[#0F0F0F] font-normal text-[13px] sm:text-[15px] leading-[21px] sm:leading-[25.5px]" style={{ letterSpacing: '-0.56px' }}>
                       Digital complaint tracking with clear status updates
                     </span>
                   </li>
                   <li className="flex items-start gap-2.5">
                     <div className="w-5 h-5 rounded-full bg-[#0F0F0F] flex items-center justify-center flex-shrink-0 mt-0.5">
                       <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 4L3.5 6.5L9 1" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>
                     </div>
-                    <span className="font-inter text-[#0F0F0F] font-normal text-[14px] sm:text-[15px] leading-[23.8px] sm:leading-[25.5px]" style={{ letterSpacing: '-0.56px' }}>
+                    <span className="font-inter text-[#0F0F0F] font-normal text-[13px] sm:text-[15px] leading-[21px] sm:leading-[25.5px]" style={{ letterSpacing: '-0.56px' }}>
                       Manage multiple PG properties from one dashboard
                     </span>
                   </li>
                 </ul>
 
                 <button
-                  className="font-inter flex items-center gap-2 bg-[#0F8BFF] text-white px-6 py-3 rounded-xl font-normal text-[14px] sm:text-[15px] hover:bg-[#0d7ae6] transition-all duration-200"
+                  className="font-inter flex items-center gap-2 bg-[#0F8BFF] text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl font-normal text-[14px] sm:text-[15px] hover:bg-[#0d7ae6] transition-all duration-200"
                   style={{ 
                     letterSpacing: "-0.5px", 
                     lineHeight: "27.2px",
@@ -396,19 +364,11 @@ export default function SolutionsSection() {
                 </button>
               </div>
 
-              <div className="flex-1 relative flex items-center justify-center top-20 left-4 p-8 sm:p-10 lg:p-12 lg:pl-6">
+              <div className="flex-1 relative flex items-center justify-center lg:top-20 lg:left-4 p-6 sm:p-10 lg:p-12 lg:pl-6">
                 <div 
-                  className="absolute w-[514.8px] h-[590px]"
-                  style={{
-                    backgroundColor: "#F7F1FF",
-                    borderTopLeftRadius: "40px",
-                    top: 0,
-                    left: 0,
-                    right: 0,
-                    bottom: 0
-                  }}
+                  className="absolute inset-0 bg-[#F7F1FF] rounded-b-[24px] lg:rounded-b-none lg:rounded-tl-[40px]"
                 />
-                <div className="w-full mb-25 max-w-[415px] relative z-10">
+                <div className="w-full max-w-[300px] sm:max-w-[350px] lg:max-w-[415px] relative z-10">
                   <Image
                     src="/f3.png"
                     alt="Properties & Complaints Dashboard"
