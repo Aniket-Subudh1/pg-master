@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Disallow admin or private pages if any
+# Disallow: /admin/
+# Disallow: /api/
+
+# Sitemap
+Sitemap: https://pgmaster.in/sitemap.xml

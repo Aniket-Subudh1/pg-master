@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import StructuredData from "./components/StructuredData";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
   authors: [{ name: "PG Master" }],
   creator: "PG Master",
   publisher: "PG Master",
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://pgmaster.in'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://pg-master.vercel.app/'),
   alternates: {
     canonical: '/',
   },
@@ -71,6 +72,7 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@700&display=swap" rel="stylesheet" />
       </head>
       <body className={`${inter.variable} antialiased`}>
+        <StructuredData />
         {children}
       </body>
     </html>
