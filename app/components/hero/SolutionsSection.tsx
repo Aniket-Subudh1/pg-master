@@ -21,10 +21,10 @@ export default function SolutionsSection() {
 
         {/* Background Blur */}
         <div 
-          className="absolute left-1/2 -translate-x-1/2 w-[90%] sm:w-[1425px] h-[1800px] sm:h-[1800px] rounded-[20px] pointer-events-none"
+          className="absolute left-1/2 -translate-x-1/2 w-[90%] sm:w-[1425px] h-[1800px] sm:h-[2000px] rounded-[20px] pointer-events-none"
           style={{
             top: '186px',
-            backgroundColor: 'rgba(104, 182, 255, 0.16)',
+            backgroundColor: 'rgba(36, 141, 239, 0.16)',
             filter: 'blur(100px)',
             zIndex: 0
           }}
