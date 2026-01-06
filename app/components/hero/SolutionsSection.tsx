@@ -3,26 +3,43 @@ import Image from "next/image";
 export default function SolutionsSection() {
   return (
     <section className="w-full bg-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6">
-      <div className="max-w-[1200px] mx-auto">
+      <div className="max-w-[1200px] mx-auto relative">
+        {/* Main Heading */}
         <h2 
-          className="font-fustat text-center text-[#0F0F0F] font-bold text-[32px] sm:text-[40px] lg:text-[48px] leading-[38.4px] sm:leading-[48px] lg:leading-[57.6px] mb-2 sm:mb-3 px-2"
+          className="font-fustat text-center text-[#0F0F0F] font-bold text-[32px] sm:text-[40px] lg:text-[48px] leading-[38.4px] sm:leading-[48px] lg:leading-[57.6px] mb-2 sm:mb-3 px-2 relative z-10"
           style={{ letterSpacing: '-2px' }}
         >
           Fix These Problems Now
         </h2>
 
+        {/* Subheading */}
         <p 
-          className="font-inter text-center text-[#5D5B63] font-normal text-[14px] sm:text-[16px] leading-[23.8px] sm:leading-[27.2px] mb-10 sm:mb-14 lg:mb-16 px-4"
+          className="font-inter text-center text-[#5D5B63] font-normal text-[14px] sm:text-[16px] leading-[23.8px] sm:leading-[27.2px] mb-10 sm:mb-14 lg:mb-16 px-4 relative z-10"
           style={{ letterSpacing: '-0.5px' }}
         >
           <span className="font-bold text-[#0F0F0F]">PGMASTER</span> helps you manage everything in one place, without daily stress.
         </p>
 
-        <div className="flex flex-col gap-6 sm:gap-8 lg:gap-10">
+        {/* Background blur effect - positioned absolutely behind content */}
+        <div 
+          className="absolute left-1/2 -translate-x-1/2 w-[90%] sm:w-[1425px] h-[1800px] sm:h-[1800px] rounded-[20px] pointer-events-none"
+          style={{
+            top: '186px',
+            backgroundColor: 'rgba(104, 182, 255, 0.16)',
+            filter: 'blur(100px)',
+            zIndex: 0
+          }}
+        />
+
+        {/* Features Grid */}
+        <div className="flex flex-col gap-6 sm:gap-8 lg:gap-10 relative z-10 max-w-[1000px] mx-auto">
           
-          <div className="w-full bg-gradient-to-br from-[#E8F5FF] to-[#F0F8FF] rounded-[16px] sm:rounded-[20px] p-6 sm:p-8 lg:p-10 flex flex-col lg:flex-row items-center lg:items-start gap-6 lg:gap-8">
-            <div className="flex-1 w-full lg:max-w-[500px]">
-              <div className="w-14 h-14 sm:w-14 sm:h-14  flex mb-1 ">
+          {/* Feature 1 - Effortless Smart Rent Automation */}
+          <div className="w-full bg-white rounded-[16px] sm:rounded-[20px] p-6 sm:p-8 lg:p-10 flex flex-col lg:flex-row items-center lg:items-start gap-6 lg:gap-10 shadow-sm">
+            {/* Left Content */}
+            <div className="flex-1 w-full lg:max-w-[420px]">
+              {/* Icon */}
+              <div className="w-14 h-14 sm:w-14 sm:h-14 flex mb-4 sm:mb-5">
                 <Image
                   src="/logo.png"
                   alt="Home Icon"
@@ -34,7 +51,7 @@ export default function SolutionsSection() {
 
               {/* Title */}
               <h3 
-                className="font-fustat text-[#0F0F0F] font-bold text-[24px] sm:text-[28px] lg:text-[32px] leading-[32px] sm:leading-[36px] lg:leading-[42px] mb-3 sm:mb-4"
+                className="font-fustat text-[#0F0F0F] font-bold text-[22px] sm:text-[26px] lg:text-[30px] leading-[30px] sm:leading-[34px] lg:leading-[38px] mb-3 sm:mb-4"
                 style={{ letterSpacing: '-0.5px' }}
               >
                 Effortless<br />
@@ -55,6 +72,7 @@ export default function SolutionsSection() {
                 <li className="flex items-start gap-2.5">
                   <div className="w-5 h-5 rounded-full bg-[#0F0F0F] flex items-center justify-center flex-shrink-0 mt-0.5">
                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 5L4.5 8.5L11 1.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
                   <span className="font-inter text-[#0F0F0F] font-normal text-[13px] sm:text-[14px] leading-[22px] sm:leading-[23.8px]" style={{ letterSpacing: '-0.56px' }}>
@@ -64,6 +82,7 @@ export default function SolutionsSection() {
                 <li className="flex items-start gap-2.5">
                   <div className="w-5 h-5 rounded-full bg-[#0F0F0F] flex items-center justify-center flex-shrink-0 mt-0.5">
                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 5L4.5 8.5L11 1.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
                   <span className="font-inter text-[#0F0F0F] font-normal text-[13px] sm:text-[14px] leading-[22px] sm:leading-[23.8px]" style={{ letterSpacing: '-0.56px' }}>
@@ -73,6 +92,7 @@ export default function SolutionsSection() {
                 <li className="flex items-start gap-2.5">
                   <div className="w-5 h-5 rounded-full bg-[#0F0F0F] flex items-center justify-center flex-shrink-0 mt-0.5">
                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 5L4.5 8.5L11 1.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
                   <span className="font-inter text-[#0F0F0F] font-normal text-[13px] sm:text-[14px] leading-[22px] sm:leading-[23.8px]" style={{ letterSpacing: '-0.56px' }}>
@@ -82,6 +102,7 @@ export default function SolutionsSection() {
                 <li className="flex items-start gap-2.5">
                   <div className="w-5 h-5 rounded-full bg-[#0F0F0F] flex items-center justify-center flex-shrink-0 mt-0.5">
                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 5L4.5 8.5L11 1.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
                   <span className="font-inter text-[#0F0F0F] font-normal text-[13px] sm:text-[14px] leading-[22px] sm:leading-[23.8px]" style={{ letterSpacing: '-0.56px' }}>
@@ -118,23 +139,23 @@ export default function SolutionsSection() {
             </div>
 
             {/* Right Image */}
-            <div className="flex-1 w-full lg:max-w-[500px] flex justify-center">
+            <div className="flex-1 w-full lg:max-w-[420px] flex justify-center lg:justify-end">
               <Image
                 src="/feature1.png"
                 alt="Smart Rent Automation Dashboard"
-                width={500}
-                height={400}
-                className="w-full max-w-[400px] sm:max-w-[450px] lg:max-w-[500px] h-auto rounded-lg"
+                width={400}
+                height={320}
+                className="w-full max-w-[350px] sm:max-w-[380px] lg:max-w-[400px] h-auto"
               />
             </div>
           </div>
 
           {/* Feature 2 - Complete Tenant & Accounting Control */}
-          <div className="w-full bg-gradient-to-br from-[#F5F0FF] to-[#FAF7FF] rounded-[16px] sm:rounded-[20px] p-6 sm:p-8 lg:p-10 flex flex-col lg:flex-row-reverse items-center lg:items-start gap-6 lg:gap-8">
+          <div className="w-full bg-white rounded-[16px] sm:rounded-[20px] p-6 sm:p-8 lg:p-10 flex flex-col lg:flex-row-reverse items-center lg:items-start gap-6 lg:gap-10 shadow-sm">
             {/* Left Content */}
-            <div className="flex-1 w-full lg:max-w-[500px]">
+            <div className="flex-1 w-full lg:max-w-[420px]">
               {/* Icon */}
-             <div className="w-14 h-14 sm:w-14 sm:h-14  flex mb-1 ">
+              <div className="w-14 h-14 sm:w-14 sm:h-14 flex mb-4 sm:mb-5">
                 <Image
                   src="/logo.png"
                   alt="Home Icon"
@@ -143,9 +164,10 @@ export default function SolutionsSection() {
                   className="w-12 h-12 sm:w-12 sm:h-12"
                 />
               </div>
+
               {/* Title */}
               <h3 
-                className="font-fustat text-[#0F0F0F] font-bold text-[24px] sm:text-[28px] lg:text-[32px] leading-[32px] sm:leading-[36px] lg:leading-[42px] mb-3 sm:mb-4"
+                className="font-fustat text-[#0F0F0F] font-bold text-[22px] sm:text-[26px] lg:text-[30px] leading-[30px] sm:leading-[34px] lg:leading-[38px] mb-3 sm:mb-4"
                 style={{ letterSpacing: '-0.5px' }}
               >
                 Complete Tenant<br />
@@ -166,6 +188,7 @@ export default function SolutionsSection() {
                 <li className="flex items-start gap-2.5">
                   <div className="w-5 h-5 rounded-full bg-[#0F0F0F] flex items-center justify-center flex-shrink-0 mt-0.5">
                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 5L4.5 8.5L11 1.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
                   <span className="font-inter text-[#0F0F0F] font-normal text-[13px] sm:text-[14px] leading-[22px] sm:leading-[23.8px]" style={{ letterSpacing: '-0.56px' }}>
@@ -175,6 +198,7 @@ export default function SolutionsSection() {
                 <li className="flex items-start gap-2.5">
                   <div className="w-5 h-5 rounded-full bg-[#0F0F0F] flex items-center justify-center flex-shrink-0 mt-0.5">
                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 5L4.5 8.5L11 1.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
                   <span className="font-inter text-[#0F0F0F] font-normal text-[13px] sm:text-[14px] leading-[22px] sm:leading-[23.8px]" style={{ letterSpacing: '-0.56px' }}>
@@ -184,6 +208,7 @@ export default function SolutionsSection() {
                 <li className="flex items-start gap-2.5">
                   <div className="w-5 h-5 rounded-full bg-[#0F0F0F] flex items-center justify-center flex-shrink-0 mt-0.5">
                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 5L4.5 8.5L11 1.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
                   <span className="font-inter text-[#0F0F0F] font-normal text-[13px] sm:text-[14px] leading-[22px] sm:leading-[23.8px]" style={{ letterSpacing: '-0.56px' }}>
@@ -193,6 +218,7 @@ export default function SolutionsSection() {
                 <li className="flex items-start gap-2.5">
                   <div className="w-5 h-5 rounded-full bg-[#0F0F0F] flex items-center justify-center flex-shrink-0 mt-0.5">
                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 5L4.5 8.5L11 1.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
                   <span className="font-inter text-[#0F0F0F] font-normal text-[13px] sm:text-[14px] leading-[22px] sm:leading-[23.8px]" style={{ letterSpacing: '-0.56px' }}>
@@ -229,23 +255,23 @@ export default function SolutionsSection() {
             </div>
 
             {/* Right Image */}
-            <div className="flex-1 w-full lg:max-w-[500px] flex justify-center">
+            <div className="flex-1 w-full lg:max-w-[420px] flex justify-center lg:justify-start">
               <Image
                 src="/feature2.png"
                 alt="Tenant & Accounting Dashboard"
-                width={500}
-                height={400}
-                className="w-full max-w-[400px] sm:max-w-[450px] lg:max-w-[500px] h-auto rounded-lg"
+                width={400}
+                height={320}
+                className="w-full max-w-[350px] sm:max-w-[380px] lg:max-w-[400px] h-auto"
               />
             </div>
           </div>
 
           {/* Feature 3 - Properties, Rooms & Complaints */}
-          <div className="w-full bg-gradient-to-br from-[#E8F5FF] to-[#F0F8FF] rounded-[16px] sm:rounded-[20px] p-6 sm:p-8 lg:p-10 flex flex-col lg:flex-row items-center lg:items-start gap-6 lg:gap-8">
+          <div className="w-full bg-white rounded-[16px] sm:rounded-[20px] p-6 sm:p-8 lg:p-10 flex flex-col lg:flex-row items-center lg:items-start gap-6 lg:gap-10 shadow-sm">
             {/* Left Content */}
-            <div className="flex-1 w-full lg:max-w-[500px]">
+            <div className="flex-1 w-full lg:max-w-[420px]">
               {/* Icon */}
-              <div className="w-14 h-14 sm:w-14 sm:h-14  flex mb-1 ">
+              <div className="w-14 h-14 sm:w-14 sm:h-14 flex mb-4 sm:mb-5">
                 <Image
                   src="/logo.png"
                   alt="Home Icon"
@@ -257,7 +283,7 @@ export default function SolutionsSection() {
 
               {/* Title */}
               <h3 
-                className="font-fustat text-[#0F0F0F] font-bold text-[24px] sm:text-[28px] lg:text-[32px] leading-[32px] sm:leading-[36px] lg:leading-[42px] mb-3 sm:mb-4"
+                className="font-fustat text-[#0F0F0F] font-bold text-[22px] sm:text-[26px] lg:text-[30px] leading-[30px] sm:leading-[34px] lg:leading-[38px] mb-3 sm:mb-4"
                 style={{ letterSpacing: '-0.5px' }}
               >
                 Properties, Rooms &<br />
@@ -279,6 +305,7 @@ export default function SolutionsSection() {
                 <li className="flex items-start gap-2.5">
                   <div className="w-5 h-5 rounded-full bg-[#0F0F0F] flex items-center justify-center flex-shrink-0 mt-0.5">
                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 5L4.5 8.5L11 1.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
                   <span className="font-inter text-[#0F0F0F] font-normal text-[13px] sm:text-[14px] leading-[22px] sm:leading-[23.8px]" style={{ letterSpacing: '-0.56px' }}>
@@ -288,6 +315,7 @@ export default function SolutionsSection() {
                 <li className="flex items-start gap-2.5">
                   <div className="w-5 h-5 rounded-full bg-[#0F0F0F] flex items-center justify-center flex-shrink-0 mt-0.5">
                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 5L4.5 8.5L11 1.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
                   <span className="font-inter text-[#0F0F0F] font-normal text-[13px] sm:text-[14px] leading-[22px] sm:leading-[23.8px]" style={{ letterSpacing: '-0.56px' }}>
@@ -297,6 +325,7 @@ export default function SolutionsSection() {
                 <li className="flex items-start gap-2.5">
                   <div className="w-5 h-5 rounded-full bg-[#0F0F0F] flex items-center justify-center flex-shrink-0 mt-0.5">
                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 5L4.5 8.5L11 1.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
                   <span className="font-inter text-[#0F0F0F] font-normal text-[13px] sm:text-[14px] leading-[22px] sm:leading-[23.8px]" style={{ letterSpacing: '-0.56px' }}>
@@ -306,6 +335,7 @@ export default function SolutionsSection() {
                 <li className="flex items-start gap-2.5">
                   <div className="w-5 h-5 rounded-full bg-[#0F0F0F] flex items-center justify-center flex-shrink-0 mt-0.5">
                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 5L4.5 8.5L11 1.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
                   <span className="font-inter text-[#0F0F0F] font-normal text-[13px] sm:text-[14px] leading-[22px] sm:leading-[23.8px]" style={{ letterSpacing: '-0.56px' }}>
@@ -342,13 +372,13 @@ export default function SolutionsSection() {
             </div>
 
             {/* Right Image */}
-            <div className="flex-1 w-full lg:max-w-[500px] flex justify-center">
+            <div className="flex-1 w-full lg:max-w-[420px] flex justify-center lg:justify-end">
               <Image
                 src="/feature3.png"
                 alt="Properties & Complaints Dashboard"
-                width={500}
-                height={400}
-                className="w-full max-w-[400px] sm:max-w-[450px] lg:max-w-[500px] h-auto rounded-lg"
+                width={400}
+                height={320}
+                className="w-full max-w-[350px] sm:max-w-[380px] lg:max-w-[400px] h-auto"
               />
             </div>
           </div>
