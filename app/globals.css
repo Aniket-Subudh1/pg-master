@@ -13,11 +13,19 @@
 }
 
 body {
-  background: var(--background);
+  background: transparent;
   color: var(--foreground);
   font-family: var(--font-inter), Inter, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: linear-gradient(to bottom, #84DEFF 0%, #D3ECFF 50%, #FFFFFF 100%);
+  background-attachment: fixed;
+  min-height: 100%;
 }
 
 .font-fustat {
