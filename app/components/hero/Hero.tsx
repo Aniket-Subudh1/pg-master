@@ -8,7 +8,7 @@ export default function Hero() {
 
       <main className="flex flex-col items-center pt-20 sm:pt-32 pb-12 sm:pb-20 px-4 sm:px-6">
         <h1
-          className="font-fustat text-center text-[#0F0F0F] font-bold text-[32px] leading-[36px] sm:text-[48px] sm:leading-[52px] lg:text-[75px] lg:leading-[78.75px] max-w-[340px] sm:max-w-[600px] lg:max-w-[893px] mb-4 sm:mb-6"
+          className="font-fustat text-center text-[#0F0F0F] font-bold text-[32px] leading-[36px] sm:text-[48px] mt-5 sm:leading-[52px] lg:text-[75px] lg:leading-[78.75px] max-w-[340px] sm:max-w-[600px] lg:max-w-[893px] mb-4 sm:mb-6"
           style={{ letterSpacing: "-2px" }}
         >
           India's #1 Renting Super App for PG & Hostels
