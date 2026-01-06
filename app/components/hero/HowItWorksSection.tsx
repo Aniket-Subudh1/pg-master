@@ -53,11 +53,10 @@ export default function HowItWorksSection() {
 
         {/* Subheading */}
         <p 
-          className="font-inter text-center text-[#5D5B63] font-normal text-[14px] sm:text-[16px] leading-[23.8px] sm:leading-[27.2px] mb-10 sm:mb-14 px-4 max-w-[748px] mx-auto"
+          className="font-inter text-center text-[#5D5B63]  font-normal text-[14px] sm:text-[16px] leading-[23.8px] sm:leading-[27.2px] mb-10 sm:mb-14 px-4 max-w-[748px] mx-auto"
           style={{ letterSpacing: '-0.5px' }}
         >
-         <strong>PGMASTER</strong> helps PG owners manage rent, tenants, rooms, and complaints in a simple, step-by-step way.
-        </p>
+         <strong>PGMASTER</strong> helps PG owners manage rent, tenants, rooms, and complaints in a simple, step-by-step way.</p>
 
         {/* Six Column Cards Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 lg:gap-6">
