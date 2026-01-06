@@ -12,7 +12,6 @@ export default function SolutionsSection() {
           Fix These Problems Now
         </h2>
 
-        {/* Subheading */}
         <p 
           className="font-inter text-center text-[#5D5B63] font-normal text-[14px] sm:text-[16px] leading-[23.8px] sm:leading-[27.2px] mb-10 sm:mb-14 lg:mb-16 px-4 relative z-10"
           style={{ letterSpacing: '-0.5px' }}
@@ -20,7 +19,6 @@ export default function SolutionsSection() {
           <span className="font-bold text-[#0F0F0F]">PGMASTER</span> helps you manage everything in one place, without daily stress.
         </p>
 
-        {/* Background blur effect - positioned absolutely behind content */}
         <div 
           className="absolute left-1/2 -translate-x-1/2 w-[90%] sm:w-[1425px] h-[1800px] sm:h-[1800px] rounded-[20px] pointer-events-none"
           style={{
@@ -31,15 +29,11 @@ export default function SolutionsSection() {
           }}
         />
 
-        {/* Features Grid */}
         <div className="flex flex-col gap-6 sm:gap-8 lg:gap-10 relative z-10 max-w-[1000px] mx-auto">
           
-          {/* Feature 1 - Effortless Smart Rent Automation */}
           <div className="w-full bg-white rounded-[16px] sm:rounded-[20px] p-6 sm:p-8 lg:p-10 flex flex-col lg:flex-row items-center lg:items-start gap-6 lg:gap-10 shadow-sm">
-            {/* Left Content */}
             <div className="flex-1 w-full lg:max-w-[420px]">
-              {/* Icon */}
-              <div className="w-14 h-14 sm:w-14 sm:h-14 flex mb-4 sm:mb-5">
+              <div className="w-14 h-14 sm:w-14 sm:h-14 flex mb-1 sm:mb-1">
                 <Image
                   src="/logo.png"
                   alt="Home Icon"
@@ -72,7 +66,6 @@ export default function SolutionsSection() {
                 <li className="flex items-start gap-2.5">
                   <div className="w-5 h-5 rounded-full bg-[#0F0F0F] flex items-center justify-center flex-shrink-0 mt-0.5">
                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 5L4.5 8.5L11 1.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
                   <span className="font-inter text-[#0F0F0F] font-normal text-[13px] sm:text-[14px] leading-[22px] sm:leading-[23.8px]" style={{ letterSpacing: '-0.56px' }}>
@@ -82,7 +75,6 @@ export default function SolutionsSection() {
                 <li className="flex items-start gap-2.5">
                   <div className="w-5 h-5 rounded-full bg-[#0F0F0F] flex items-center justify-center flex-shrink-0 mt-0.5">
                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 5L4.5 8.5L11 1.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
                   <span className="font-inter text-[#0F0F0F] font-normal text-[13px] sm:text-[14px] leading-[22px] sm:leading-[23.8px]" style={{ letterSpacing: '-0.56px' }}>
@@ -92,7 +84,6 @@ export default function SolutionsSection() {
                 <li className="flex items-start gap-2.5">
                   <div className="w-5 h-5 rounded-full bg-[#0F0F0F] flex items-center justify-center flex-shrink-0 mt-0.5">
                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 5L4.5 8.5L11 1.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
                   <span className="font-inter text-[#0F0F0F] font-normal text-[13px] sm:text-[14px] leading-[22px] sm:leading-[23.8px]" style={{ letterSpacing: '-0.56px' }}>
@@ -102,7 +93,6 @@ export default function SolutionsSection() {
                 <li className="flex items-start gap-2.5">
                   <div className="w-5 h-5 rounded-full bg-[#0F0F0F] flex items-center justify-center flex-shrink-0 mt-0.5">
                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 5L4.5 8.5L11 1.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
                   <span className="font-inter text-[#0F0F0F] font-normal text-[13px] sm:text-[14px] leading-[22px] sm:leading-[23.8px]" style={{ letterSpacing: '-0.56px' }}>
@@ -155,7 +145,7 @@ export default function SolutionsSection() {
             {/* Left Content */}
             <div className="flex-1 w-full lg:max-w-[420px]">
               {/* Icon */}
-              <div className="w-14 h-14 sm:w-14 sm:h-14 flex mb-4 sm:mb-5">
+              <div className="w-14 h-14 sm:w-14 sm:h-14 flex mb-1 sm:mb-1">
                 <Image
                   src="/logo.png"
                   alt="Home Icon"
@@ -188,7 +178,6 @@ export default function SolutionsSection() {
                 <li className="flex items-start gap-2.5">
                   <div className="w-5 h-5 rounded-full bg-[#0F0F0F] flex items-center justify-center flex-shrink-0 mt-0.5">
                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 5L4.5 8.5L11 1.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
                   <span className="font-inter text-[#0F0F0F] font-normal text-[13px] sm:text-[14px] leading-[22px] sm:leading-[23.8px]" style={{ letterSpacing: '-0.56px' }}>
@@ -198,7 +187,6 @@ export default function SolutionsSection() {
                 <li className="flex items-start gap-2.5">
                   <div className="w-5 h-5 rounded-full bg-[#0F0F0F] flex items-center justify-center flex-shrink-0 mt-0.5">
                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 5L4.5 8.5L11 1.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
                   <span className="font-inter text-[#0F0F0F] font-normal text-[13px] sm:text-[14px] leading-[22px] sm:leading-[23.8px]" style={{ letterSpacing: '-0.56px' }}>
@@ -208,7 +196,6 @@ export default function SolutionsSection() {
                 <li className="flex items-start gap-2.5">
                   <div className="w-5 h-5 rounded-full bg-[#0F0F0F] flex items-center justify-center flex-shrink-0 mt-0.5">
                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 5L4.5 8.5L11 1.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
                   <span className="font-inter text-[#0F0F0F] font-normal text-[13px] sm:text-[14px] leading-[22px] sm:leading-[23.8px]" style={{ letterSpacing: '-0.56px' }}>
@@ -218,7 +205,6 @@ export default function SolutionsSection() {
                 <li className="flex items-start gap-2.5">
                   <div className="w-5 h-5 rounded-full bg-[#0F0F0F] flex items-center justify-center flex-shrink-0 mt-0.5">
                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 5L4.5 8.5L11 1.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
                   <span className="font-inter text-[#0F0F0F] font-normal text-[13px] sm:text-[14px] leading-[22px] sm:leading-[23.8px]" style={{ letterSpacing: '-0.56px' }}>
@@ -271,7 +257,7 @@ export default function SolutionsSection() {
             {/* Left Content */}
             <div className="flex-1 w-full lg:max-w-[420px]">
               {/* Icon */}
-              <div className="w-14 h-14 sm:w-14 sm:h-14 flex mb-4 sm:mb-5">
+              <div className="w-14 h-14 sm:w-14 sm:h-14 flex mb-1 sm:mb-1">
                 <Image
                   src="/logo.png"
                   alt="Home Icon"
@@ -305,7 +291,6 @@ export default function SolutionsSection() {
                 <li className="flex items-start gap-2.5">
                   <div className="w-5 h-5 rounded-full bg-[#0F0F0F] flex items-center justify-center flex-shrink-0 mt-0.5">
                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 5L4.5 8.5L11 1.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
                   <span className="font-inter text-[#0F0F0F] font-normal text-[13px] sm:text-[14px] leading-[22px] sm:leading-[23.8px]" style={{ letterSpacing: '-0.56px' }}>
@@ -315,7 +300,6 @@ export default function SolutionsSection() {
                 <li className="flex items-start gap-2.5">
                   <div className="w-5 h-5 rounded-full bg-[#0F0F0F] flex items-center justify-center flex-shrink-0 mt-0.5">
                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 5L4.5 8.5L11 1.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
                   <span className="font-inter text-[#0F0F0F] font-normal text-[13px] sm:text-[14px] leading-[22px] sm:leading-[23.8px]" style={{ letterSpacing: '-0.56px' }}>
@@ -325,7 +309,6 @@ export default function SolutionsSection() {
                 <li className="flex items-start gap-2.5">
                   <div className="w-5 h-5 rounded-full bg-[#0F0F0F] flex items-center justify-center flex-shrink-0 mt-0.5">
                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 5L4.5 8.5L11 1.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
                   <span className="font-inter text-[#0F0F0F] font-normal text-[13px] sm:text-[14px] leading-[22px] sm:leading-[23.8px]" style={{ letterSpacing: '-0.56px' }}>
@@ -335,7 +318,6 @@ export default function SolutionsSection() {
                 <li className="flex items-start gap-2.5">
                   <div className="w-5 h-5 rounded-full bg-[#0F0F0F] flex items-center justify-center flex-shrink-0 mt-0.5">
                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 5L4.5 8.5L11 1.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
                   <span className="font-inter text-[#0F0F0F] font-normal text-[13px] sm:text-[14px] leading-[22px] sm:leading-[23.8px]" style={{ letterSpacing: '-0.56px' }}>
