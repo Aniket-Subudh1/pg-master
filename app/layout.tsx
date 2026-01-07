@@ -9,6 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://pg-master.vercel.app"),
   title: "PG Master - India's #1 Renting Super App",
   description: "Effortlessly manage your PG or hostel with PGMASTER",
   keywords: ["PG management", "hostel management", "renting app", "PG finder", "student accommodation", "India"],

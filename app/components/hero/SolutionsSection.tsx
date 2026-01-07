@@ -131,27 +131,27 @@ export default function SolutionsSection() {
               </div>
 
               {/* Right Image Section with Gradient Container */}
-              <div className="flex-1 relative flex lg:top-20 lg:left-4 items-center justify-center p-6 sm:p-10 lg:p-12 lg:pl-6">
+              <div className="flex-1 relative flex lg:top-20  lg:left-4 items-center justify-center p-6 sm:p-10 lg:p-12 lg:pl-6 min-h-[400px] sm:min-h-[450px]">
                 {/* Gradient background */}
                 <div 
                   className="absolute inset-0 bg-[#F7F1FF] rounded-b-[24px] lg:rounded-b-none lg:rounded-tl-[40px]"
                 />
-                <div className="w-full max-w-[300px] bottom-8 sm:max-w-[350px] left-15 lg:max-w-[415px] relative z-10">
+                <div className="w-full max-w-[180px] sm:max-w-[200px] lg:max-w-[415px] absolute left-4 bottom-4 sm:left-8 sm:bottom-8 top-1 lg:relative lg:bottom-8 lg:left-15 z-10">
                   <Image
                     src="/f1.png"
                     alt="Smart Rent Automation Dashboard"
                     width={400}
                     height={100}
-                    className="w-[250px] rounded-lg h-[500px]"
+                    className="w-full rounded-lg h-auto lg:w-[250px] lg:h-[500px]"
                   />
                 </div>
-                <div className="w-full max-w-[300px] top-10 right-10 sm:max-w-[350px] lg:max-w-[415px] relative z-10">
+                <div className="w-full max-w-[140px] sm:max-w-[160px] lg:max-w-[415px] absolute right-15 top-50 sm:right-8 sm:top-8 lg:relative lg:top-10 lg:right-10 z-10">
                   <Image
                     src="/f11.png"
                     alt="Smart Rent Automation Dashboard"
                     width={400}
                     height={100}
-                    className="w-[250px]   h-[160px]"
+                    className="w-full h-auto lg:w-[250px] lg:h-[160px]"
                   />
                 </div>
               </div>
@@ -257,27 +257,27 @@ export default function SolutionsSection() {
               </div>
 
               {/* Left Image Section with Gradient Container */}
-              <div className="flex-1 relative flex lg:top-20 items-center justify-center p-6 sm:p-10 lg:p-12 lg:pr-6">
+              <div className="flex-1 relative flex lg:top-20 items-center justify-center p-6 sm:p-10 lg:p-12 lg:pr-6 min-h-[400px] sm:min-h-[450px]">
                 {/* Gradient background */}
                 <div 
                   className="absolute inset-0 bg-[#F3FAFF] rounded-b-[24px] lg:rounded-b-none lg:rounded-tr-[40px]"
                 />
-                <div className="w-full max-w-[300px] sm:max-w-[350px] lg:max-w-[410px] relative z-10">
+                <div className="w-full max-w-[180px] sm:max-w-[200px] lg:max-w-[410px] top-2 absolute left-4 bottom-4 sm:left-8 sm:bottom-8 lg:relative z-10">
                   <Image
                     src="/f2.png"
                     alt="Tenant & Accounting Dashboard"
                     width={410}
                     height={491}
-                    className="w-[250px] h-[500px] rounded-lg"
+                    className="w-full h-auto rounded-lg lg:w-[250px] lg:h-[500px]"
                   />
                 </div>
-                <div className="w-full max-w-[300px] top-15 right-5 sm:max-w-[350px] lg:max-w-[410px] relative z-10">
+                <div className="w-full max-w-[120px] sm:max-w-[140px] lg:max-w-[410px] absolute right-10 top-20 sm:right-8 sm:top-8 lg:relative lg:top-15 lg:right-5 z-10">
                   <Image
                     src="/f21.png"
                     alt="Tenant & Accounting Dashboard"
                     width={600}
                     height={600}
-                    className="w-[170px] h-[240px] rounded-lg -rotate-3"
+                    className="w-full h-auto rounded-lg -rotate-3 lg:w-[170px] lg:h-[240px]"
                   />
                 </div>
               </div>
@@ -382,26 +382,26 @@ export default function SolutionsSection() {
                 </button>
               </div>
 
-              <div className="flex-1 relative flex items-center justify-center lg:top-20 lg:left-4 p-6 sm:p-10 lg:p-12 lg:pl-6">
+              <div className="flex-1 relative flex gap-4 items-center justify-center lg:top-20 lg:left-4 p-6 sm:p-10 lg:p-12 lg:pl-6 min-h-[400px] sm:min-h-[450px]">
                 <div 
-                  className="absolute inset-0  bg-[#F7F1FF] rounded-b-[24px] lg:rounded-b-none lg:rounded-tl-[40px]"
+                  className="absolute inset-0 bg-[#F7F1FF] rounded-b-[24px] lg:rounded-b-none lg:rounded-tl-[40px]"
                 />
-                <div className="w-full max-w-[300px] bottom-10 sm:max-w-[350px] lg:max-w-[415px] relative z-10">
+                <div className="w-full max-w-[160px]  sm:max-w-[180px] lg:max-w-[415px] absolute left-4 bottom-4 sm:left-6 sm:bottom-6 lg:relative lg:bottom-10 z-10">
                   <Image
                     src="/f3.png"
                     alt="Properties & Complaints Dashboard"
                     width={415}
                     height={544}
-                    className="w-[230px] h-[500px] rounded-lg"
+                    className="w-full h-auto rounded-lg  lg:w-[230px] lg:h-[500px]"
                   />
                 </div>
-                 <div className="w-full max-w-[300px] bottom-10 left-4 sm:max-w-[350px] lg:max-w-[415px] relative z-10">
+                <div className="w-full max-w-[160px] sm:max-w-[180px] lg:max-w-[415px] absolute right-4 bottom-4 sm:right-6 sm:bottom-6 lg:relative lg:bottom-10 lg:left-4 z-10">
                   <Image
                     src="/f31.png"
                     alt="Properties & Complaints Dashboard"
                     width={415}
                     height={544}
-                    className="w-[230px] h-[500px] rounded-lg"
+                    className="w-full h-auto rounded-lg lg:w-[230px] lg:h-[500px]"
                   />
                 </div>
               </div>
