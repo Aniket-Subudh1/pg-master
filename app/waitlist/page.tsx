@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import CTASection from "../components/hero/CTASection";
 
 export default function WaitlistPage() {
   const [formData, setFormData] = useState({
@@ -84,8 +85,8 @@ export default function WaitlistPage() {
   };
 
   return (
+    <div>
     <div className="min-h-screen bg-gradient-to-b from-[#B4DEFF] via-[#D3ECFF] to-[#FFFFFF]">
-      {/* Navbar */}
       <nav className="fixed top-3 sm:top-6 left-1/2 -translate-x-1/2 z-50 w-full max-w-4xl px-4 sm:px-8">
         <div className="flex items-center justify-between bg-white/50 backdrop-blur-lg rounded-xl px-4 sm:px-6 py-2 shadow-[inset_0_4px_4px_0_rgba(255,255,255,0.35)]">
           <Link href="/" className="flex items-center gap-1.5 sm:gap-2">
@@ -399,6 +400,9 @@ export default function WaitlistPage() {
           Join over 1,000+ PG owners who have already signed up for early access
         </p>
       </main>
+      
+    </div>
+    <CTASection/>
     </div>
   );
 }

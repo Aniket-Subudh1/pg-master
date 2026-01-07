@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import connectDB from '@/app/lib/mongodb'
 import Waitlist from '@/app/models/Waitlist'
+import { sendWaitlistConfirmation, sendOwnerNotification } from '@/app/lib/email'
 
 export async function POST(request: NextRequest) {
   try {
@@ -85,10 +86,34 @@ export async function POST(request: NextRequest) {
       status: 'pending'
     })
 
+    // Send confirmation email to user
+    const userEmailSent = await sendWaitlistConfirmation(email, name, pgName)
+    
+    // Send notification email to owner
+    const ownerEmailSent = await sendOwnerNotification({
+      name,
+      email,
+      phone,
+      pgName,
+      beds,
+      location,
+      role,
+      category
+    })
+
+    // Log email status
+    if (!userEmailSent) {
+      console.warn('Failed to send confirmation email to user:', email)
+    }
+    if (!ownerEmailSent) {
+      console.warn('Failed to send notification email to owner')
+    }
+
     return NextResponse.json(
       {
         success: true,
         message: 'Successfully joined the waitlist',
+        emailSent: userEmailSent,
         data: {
           id: waitlistEntry._id,
           name: waitlistEntry.name,
