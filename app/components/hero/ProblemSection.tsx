@@ -114,7 +114,6 @@ export default function ProblemsSection() {
             " Pehle rent aur complaints ke liye roz tension hoti thi. Ab sab ek jagah
           </p>
 
-          {/* Quote Text - Second Part */}
           <p 
             className="font-fustat text-center text-[#0F0F0F] font-bold text-[18px] sm:text-[20px] lg:text-[24px] leading-[27px] sm:leading-[30px] lg:leading-[36px] max-w-[674px] mb-4 sm:mb-6"
             style={{ letterSpacing: '-0.5px' }}
@@ -122,7 +121,6 @@ export default function ProblemsSection() {
             manage ho jata hai, aur daily follow-ups ka stress kam ho gaya "
           </p>
 
-          {/* Author Profile */}
           <div className="flex items-center gap-3">
             <div className="w-[40px] h-[40px] rounded-full overflow-hidden flex-shrink-0">
               <Image

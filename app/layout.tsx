@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://pg-master.vercel.app"),
+  metadataBase: new URL("https://www.pgmaster.in/"),
   title: "PG Master - India's #1 Renting Super App",
   description: "Effortlessly manage your PG or hostel with PGMASTER",
   keywords: ["PG management", "hostel management", "renting app", "PG finder", "student accommodation", "India"],
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://pg-master.vercel.app/",
+    url: "https://www.pgmaster.in/",
     title: "PG Master - India's #1 Renting Super App",
     description: "Effortlessly manage your PG or hostel with PGMASTER",
     siteName: "PG Master",
