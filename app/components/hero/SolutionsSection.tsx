@@ -104,7 +104,7 @@ export default function SolutionsSection() {
 
                 <Link
                   href="/waitlist"
-                  className="font-inter flex items-center gap-2 bg-[#0F8BFF] text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl font-normal text-[14px] sm:text-[15px] hover:bg-[#0d7ae6] transition-all duration-200"
+                  className="font-inter inline-flex items-center gap-2 bg-[#0F8BFF] text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl font-normal text-[14px] sm:text-[15px] hover:bg-[#0d7ae6] transition-all duration-200"
                   style={{ 
                     letterSpacing: "-0.5px", 
                     lineHeight: "27.2px",
@@ -231,7 +231,7 @@ export default function SolutionsSection() {
 
                 <Link
                   href="/waitlist"
-                  className="font-inter flex items-center gap-2 bg-[#0F8BFF] text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl font-normal text-[14px] sm:text-[15px] hover:bg-[#0d7ae6] transition-all duration-200"
+                  className="font-inter inline-flex items-center gap-2 bg-[#0F8BFF] text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl font-normal text-[14px] sm:text-[15px] hover:bg-[#0d7ae6] transition-all duration-200"
                   style={{ 
                     letterSpacing: "-0.5px", 
                     lineHeight: "27.2px",
@@ -358,7 +358,7 @@ export default function SolutionsSection() {
 
                 <Link
                   href="/waitlist"
-                  className="font-inter flex items-center gap-2 bg-[#0F8BFF] text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl font-normal text-[14px] sm:text-[15px] hover:bg-[#0d7ae6] transition-all duration-200"
+                  className="font-inter inline-flex items-center gap-2 bg-[#0F8BFF] text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl font-normal text-[14px] sm:text-[15px] hover:bg-[#0d7ae6] transition-all duration-200"
                   style={{ 
                     letterSpacing: "-0.5px", 
                     lineHeight: "27.2px",
