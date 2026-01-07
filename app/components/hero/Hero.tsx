@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Navbar from "../Navbar";
 
 export default function Hero() {
@@ -28,7 +29,8 @@ export default function Hero() {
           From rent collection and tenant management to maintenance and analytics, everything you need is in one app.
         </p>
 
-        <button
+        <Link
+          href="/waitlist"
           className="font-inter flex items-center gap-2 bg-[#0F8BFF] text-white px-5 py-3 sm:px-6 sm:py-3.5 rounded-2xl font-normal text-[14px] sm:text-[16px] hover:bg-[#0d7ae6] hover:shadow-[0_4px_4px_0_rgba(255,255,255,0.35)_inset] transition-all duration-200 shadow-[0_4px_4px_0_rgba(255,255,255,0.35)_inset] mb-6 sm:mb-8"
           style={{ letterSpacing: "-0.5px", lineHeight: "27.2px" }}
         >
@@ -51,7 +53,7 @@ export default function Hero() {
               />
             </svg>
           </div>
-        </button>
+        </Link>
 
         {/* Rating */}
         <div className="font-inter flex flex-col sm:flex-row items-center gap-2 mb-8 sm:mb-12">
@@ -124,14 +126,14 @@ export default function Hero() {
 
         {/* Trust Badges */}
         <div className="flex flex-col items-center">
-          <div className="flex items-center justify-center gap-4 sm:gap-6 lg:gap-8 mb-3 sm:mb-4 flex-wrap max-w-[340px] sm:max-w-full">
+          <div className="flex items-center justify-center gap-4 sm:gap-6 lg:gap-8 mb-3 sm:mb-4 flex-wrap max-w-[40px] sm:max-w-full">
             {/* ZenZap Logo */}
             <Image
               src="/4.png"
               alt="ZenZap"
               width={60}
               height={18}
-              className="object-contain h-4 w-auto sm:h-5 lg:h-6"
+              className="object-contain h-8 w-auto sm:h-10 lg:h-14"
             />
 
             {/* sparkle Logo */}
@@ -140,7 +142,7 @@ export default function Hero() {
               alt="sparkle"
               width={60}
               height={18}
-              className="object-contain h-4 w-auto sm:h-5 lg:h-6"
+              className="object-contain h-8 w-auto sm:h-10 lg:h-14"
             />
 
             {/* Craftgram Logo */}
@@ -149,7 +151,7 @@ export default function Hero() {
               alt="Craftgram"
               width={68}
               height={18}
-              className="object-contain h-4 w-auto sm:h-5 lg:h-6"
+              className="object-contain h-8 w-auto sm:h-10 lg:h-14"
             />
 
             {/* Pulse Logo */}
@@ -158,7 +160,7 @@ export default function Hero() {
               alt="Pulse"
               width={53}
               height={18}
-              className="object-contain h-4 w-auto sm:h-5 lg:h-6"
+              className="object-contain h-8 w-auto sm:h-10 lg:h-14"
             />
 
             {/* swift Logo */}
@@ -167,7 +169,7 @@ export default function Hero() {
               alt="swift"
               width={45}
               height={18}
-              className="object-contain h-4 w-auto sm:h-5 lg:h-6"
+              className="object-contain h-8 w-auto sm:h-10 lg:h-14"
             />
           </div>
 

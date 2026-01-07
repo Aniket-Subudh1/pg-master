@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function SolutionsSection() {
   return (
@@ -101,7 +102,8 @@ export default function SolutionsSection() {
                   </li>
                 </ul>
 
-                <button
+                <Link
+                  href="/waitlist"
                   className="font-inter flex items-center gap-2 bg-[#0F8BFF] text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl font-normal text-[14px] sm:text-[15px] hover:bg-[#0d7ae6] transition-all duration-200"
                   style={{ 
                     letterSpacing: "-0.5px", 
@@ -127,7 +129,7 @@ export default function SolutionsSection() {
                       />
                     </svg>
                   </div>
-                </button>
+                </Link>
               </div>
 
               {/* Right Image Section with Gradient Container */}
@@ -227,7 +229,8 @@ export default function SolutionsSection() {
                   </li>
                 </ul>
 
-                <button
+                <Link
+                  href="/waitlist"
                   className="font-inter flex items-center gap-2 bg-[#0F8BFF] text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl font-normal text-[14px] sm:text-[15px] hover:bg-[#0d7ae6] transition-all duration-200"
                   style={{ 
                     letterSpacing: "-0.5px", 
@@ -253,7 +256,7 @@ export default function SolutionsSection() {
                       />
                     </svg>
                   </div>
-                </button>
+                </Link>
               </div>
 
               {/* Left Image Section with Gradient Container */}
@@ -353,7 +356,8 @@ export default function SolutionsSection() {
                   </li>
                 </ul>
 
-                <button
+                <Link
+                  href="/waitlist"
                   className="font-inter flex items-center gap-2 bg-[#0F8BFF] text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl font-normal text-[14px] sm:text-[15px] hover:bg-[#0d7ae6] transition-all duration-200"
                   style={{ 
                     letterSpacing: "-0.5px", 
@@ -379,7 +383,7 @@ export default function SolutionsSection() {
                       />
                     </svg>
                   </div>
-                </button>
+                </Link>
               </div>
 
               <div className="flex-1 relative flex gap-4 items-center justify-center lg:top-20 lg:left-4 p-6 sm:p-10 lg:p-12 lg:pl-6 min-h-[400px] sm:min-h-[450px]">

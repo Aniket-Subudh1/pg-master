@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
@@ -16,7 +17,7 @@ export default function Navbar() {
             PG MASTER
           </span>
         </div>
-        <button className="flex items-center gap-1.5 sm:gap-2 bg-white/60 text-black px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl font-normal text-sm sm:text-base hover:bg-white/80 hover:scale-105 hover:shadow-lg transition-all duration-200 shadow-[inset_0_4px_4px_0_rgba(255,255,255,0.35)]" style={{ letterSpacing: '-0.5px', lineHeight: '27.2px' }}>
+        <Link href="/waitlist" className="flex items-center gap-1.5 sm:gap-2 bg-white/60 text-black px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl font-normal text-sm sm:text-base hover:bg-white/80 hover:scale-105 hover:shadow-lg transition-all duration-200 shadow-[inset_0_4px_4px_0_rgba(255,255,255,0.35)]" style={{ letterSpacing: '-0.5px', lineHeight: '27.2px' }}>
           <span className="hidden xs:inline">Get Started</span>
           <span className="inline xs:hidden">Get Started</span>
           <div className="flex items-center justify-center w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white group-hover:scale-110 transition-transform">
@@ -37,7 +38,7 @@ export default function Navbar() {
               />
             </svg>
           </div>
-        </button>
+        </Link>
       </div>
     </nav>
   );

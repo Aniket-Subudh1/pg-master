@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function CTASection() {
   return (
@@ -55,7 +56,8 @@ export default function CTASection() {
               </p>
 
               {/* CTA Button */}
-              <button
+              <Link
+                href="/waitlist"
                 className="font-inter inline-flex items-center gap-2 bg-[#0F8BFF] text-white px-5 sm:px-6 md:px-7 py-2.5 sm:py-3 md:py-3.5 rounded-xl sm:rounded-2xl font-normal text-[14px] sm:text-[15px] md:text-[16px] hover:bg-[#0d7ae6] transition-all duration-200 self-start"
                 style={{ 
                   letterSpacing: "-0.5px", 
@@ -82,7 +84,7 @@ export default function CTASection() {
                     />
                   </svg>
                 </div>
-              </button>
+              </Link>
             </div>
 
             {/* Right - Mobile Mockup */}
