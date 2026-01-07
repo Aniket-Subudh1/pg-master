@@ -131,8 +131,8 @@ export default function Hero() {
             <Image
               src="/4.png"
               alt="ZenZap"
-              width={60}
-              height={18}
+              width={400}
+              height={400}
               className="object-contain h-8 w-auto sm:h-10 lg:h-14"
             />
 
@@ -140,8 +140,8 @@ export default function Hero() {
             <Image
               src="/5.png"
               alt="sparkle"
-              width={60}
-              height={18}
+              width={400}
+              height={400}
               className="object-contain h-8 w-auto sm:h-10 lg:h-14"
             />
 
@@ -149,8 +149,8 @@ export default function Hero() {
             <Image
               src="/6.png"
               alt="Craftgram"
-              width={68}
-              height={18}
+              width={400}
+              height={400}
               className="object-contain h-8 w-auto sm:h-10 lg:h-14"
             />
 
@@ -158,8 +158,8 @@ export default function Hero() {
             <Image
               src="/7.png"
               alt="Pulse"
-              width={53}
-              height={18}
+              width={400}
+              height={400}
               className="object-contain h-8 w-auto sm:h-10 lg:h-14"
             />
 
@@ -167,8 +167,8 @@ export default function Hero() {
             <Image
               src="/8.png"
               alt="swift"
-              width={45}
-              height={18}
+              width={400}
+              height={400}
               className="object-contain h-8 w-auto sm:h-10 lg:h-14"
             />
           </div>
