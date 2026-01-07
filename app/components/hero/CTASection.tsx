@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function CTASection() {
   return (
     <section className="w-full relative overflow-hidden">
-      {/* Main Container with Gradient Background (fixed stops) */}
+
       <div
         className="relative w-full min-h-[500px] sm:min-h-[600px] lg:min-h-[635px]"
         style={{
@@ -11,7 +11,7 @@ export default function CTASection() {
             "linear-gradient(180deg, #FFFFFF 0%, #bee2fbff 50%, #8fc7f2ff 100%)",
         }}
       >
-        {/* Cloud Backgrounds (two positions per Figma) */}
+
         <div className="absolute left-[-60px] bottom-0 w-[905px] h-full max-h-[635px]">
           <Image
             src="/c1.png"

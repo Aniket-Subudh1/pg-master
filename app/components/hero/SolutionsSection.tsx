@@ -136,13 +136,22 @@ export default function SolutionsSection() {
                 <div 
                   className="absolute inset-0 bg-[#F7F1FF] rounded-b-[24px] lg:rounded-b-none lg:rounded-tl-[40px]"
                 />
-                <div className="w-full max-w-[300px] sm:max-w-[350px] lg:max-w-[415px] relative z-10">
+                <div className="w-full max-w-[300px] bottom-8 sm:max-w-[350px] left-15 lg:max-w-[415px] relative z-10">
                   <Image
                     src="/f1.png"
                     alt="Smart Rent Automation Dashboard"
-                    width={415}
-                    height={497}
-                    className="w-full h-auto"
+                    width={400}
+                    height={100}
+                    className="w-[250px] rounded-lg h-[500px]"
+                  />
+                </div>
+                <div className="w-full max-w-[300px] top-10 right-10 sm:max-w-[350px] lg:max-w-[415px] relative z-10">
+                  <Image
+                    src="/f11.png"
+                    alt="Smart Rent Automation Dashboard"
+                    width={400}
+                    height={100}
+                    className="w-[250px]   h-[160px]"
                   />
                 </div>
               </div>
@@ -259,7 +268,16 @@ export default function SolutionsSection() {
                     alt="Tenant & Accounting Dashboard"
                     width={410}
                     height={491}
-                    className="w-full h-auto"
+                    className="w-[250px] h-[500px] rounded-lg"
+                  />
+                </div>
+                <div className="w-full max-w-[300px] top-15 right-5 sm:max-w-[350px] lg:max-w-[410px] relative z-10">
+                  <Image
+                    src="/f21.png"
+                    alt="Tenant & Accounting Dashboard"
+                    width={600}
+                    height={600}
+                    className="w-[170px] h-[240px] rounded-lg -rotate-3"
                   />
                 </div>
               </div>
@@ -366,15 +384,24 @@ export default function SolutionsSection() {
 
               <div className="flex-1 relative flex items-center justify-center lg:top-20 lg:left-4 p-6 sm:p-10 lg:p-12 lg:pl-6">
                 <div 
-                  className="absolute inset-0 bg-[#F7F1FF] rounded-b-[24px] lg:rounded-b-none lg:rounded-tl-[40px]"
+                  className="absolute inset-0  bg-[#F7F1FF] rounded-b-[24px] lg:rounded-b-none lg:rounded-tl-[40px]"
                 />
-                <div className="w-full max-w-[300px] sm:max-w-[350px] lg:max-w-[415px] relative z-10">
+                <div className="w-full max-w-[300px] bottom-10 sm:max-w-[350px] lg:max-w-[415px] relative z-10">
                   <Image
                     src="/f3.png"
                     alt="Properties & Complaints Dashboard"
                     width={415}
                     height={544}
-                    className="w-full h-auto"
+                    className="w-[230px] h-[500px] rounded-lg"
+                  />
+                </div>
+                 <div className="w-full max-w-[300px] bottom-10 left-4 sm:max-w-[350px] lg:max-w-[415px] relative z-10">
+                  <Image
+                    src="/f31.png"
+                    alt="Properties & Complaints Dashboard"
+                    width={415}
+                    height={544}
+                    className="w-[230px] h-[500px] rounded-lg"
                   />
                 </div>
               </div>

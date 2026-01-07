@@ -71,7 +71,7 @@ export default function ProblemsSection() {
                 alt="Rent Collection Dashboard"
                 width={282}
                 height={196}
-                className="w-[240px] sm:w-[280px] h-auto"
+                className="w-[240px] sm:w-[280px] h-[180px]"
               />
             </div>
           </div>
@@ -97,8 +97,8 @@ export default function ProblemsSection() {
                 src="/p3.png"
                 alt="Complaint Management Dashboard"
                 width={282}
-                height={196}
-                className="w-[240px] sm:w-[280px] h-auto"
+                height={200}
+                className="w-[240px] sm:w-[280px] h-[180px]"
               />
             </div>
           </div>
