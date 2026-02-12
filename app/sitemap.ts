@@ -24,6 +24,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.5,
     },
     {
+      url: `${baseUrl}/privacy`,
+      lastModified: new Date('2026-02-12'),
+      changeFrequency: 'monthly',
+      priority: 0.5,
+    },
+    {
       url: `${baseUrl}/refund`,
       lastModified: new Date('2026-02-12'),
       changeFrequency: 'monthly',

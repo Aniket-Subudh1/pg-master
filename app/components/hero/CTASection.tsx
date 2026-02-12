@@ -126,6 +126,13 @@ export default function CTASection() {
                   Terms & Conditions
                 </Link>
                 <Link
+                  href="/privacy"
+                  className="font-inter text-[#0F0F0F] hover:text-[#0F8BFF] font-normal text-[12px] sm:text-[14px] transition-colors"
+                  style={{ letterSpacing: '-0.5px' }}
+                >
+                  Privacy Policy
+                </Link>
+                <Link
                   href="/refund"
                   className="font-inter text-[#0F0F0F] hover:text-[#0F8BFF] font-normal text-[12px] sm:text-[14px] transition-colors"
                   style={{ letterSpacing: '-0.5px' }}

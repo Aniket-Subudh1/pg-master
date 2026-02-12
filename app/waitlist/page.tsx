@@ -338,7 +338,10 @@ export default function WaitlistPage() {
                 I agree to the{" "}
                 <Link href="/terms" className="text-[#0F8BFF] hover:underline">
                   Terms & Conditions
-                </Link>{" "}
+                </Link>,{" "}
+                <Link href="/privacy" className="text-[#0F8BFF] hover:underline">
+                  Privacy Policy
+                </Link>,{" "}
                 and{" "}
                 <Link href="/refund" className="text-[#0F8BFF] hover:underline">
                   Refund & Cancellation Policy
