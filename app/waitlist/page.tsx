@@ -336,13 +336,13 @@ export default function WaitlistPage() {
                 className="text-[#0F0F0F] font-inter text-sm sm:text-base"
               >
                 I agree to the{" "}
-                <a href="#" className="text-[#0F8BFF] hover:underline">
-                  Terms and Conditions
-                </a>{" "}
+                <Link href="/terms" className="text-[#0F8BFF] hover:underline">
+                  Terms & Conditions
+                </Link>{" "}
                 and{" "}
-                <a href="#" className="text-[#0F8BFF] hover:underline">
-                  Privacy Policy
-                </a>
+                <Link href="/refund" className="text-[#0F8BFF] hover:underline">
+                  Refund & Cancellation Policy
+                </Link>
               </label>
             </div>
 

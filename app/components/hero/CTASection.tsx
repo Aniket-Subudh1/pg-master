@@ -106,18 +106,38 @@ export default function CTASection() {
 
         {/* Footer Section */}
         <div className="relative z-10 w-full bg-white border-t border-[#E5E5E5]">
-          <div className="max-w-[1425px] mx-auto px-4 sm:px-6 py-6 sm:py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-            {/* Left Text */}
-            <p 
-              className="font-fustat text-[#0F0F0F] font-normal text-[12px] sm:text-[14px] md:text-[16px] leading-[20px] sm:leading-[22px] md:leading-[24px] text-center sm:text-left"
-              style={{ letterSpacing: '-0.5px' }}
-            >
-              Made by Owners. Trusted by Owners.
-            </p>
+          <div className="max-w-[1425px] mx-auto px-4 sm:px-6 py-6 sm:py-8">
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-4">
+              {/* Left Text */}
+              <p 
+                className="font-fustat text-[#0F0F0F] font-normal text-[12px] sm:text-[14px] md:text-[16px] leading-[20px] sm:leading-[22px] md:leading-[24px] text-center sm:text-left"
+                style={{ letterSpacing: '-0.5px' }}
+              >
+                Made by Owners. Trusted by Owners.
+              </p>
 
-            {/* Right Text */}
+              {/* Footer Links */}
+              <div className="flex items-center gap-4 sm:gap-6">
+                <Link
+                  href="/terms"
+                  className="font-inter text-[#0F0F0F] hover:text-[#0F8BFF] font-normal text-[12px] sm:text-[14px] transition-colors"
+                  style={{ letterSpacing: '-0.5px' }}
+                >
+                  Terms & Conditions
+                </Link>
+                <Link
+                  href="/refund"
+                  className="font-inter text-[#0F0F0F] hover:text-[#0F8BFF] font-normal text-[12px] sm:text-[14px] transition-colors"
+                  style={{ letterSpacing: '-0.5px' }}
+                >
+                  Refund & Cancellation
+                </Link>
+              </div>
+            </div>
+
+            {/* Copyright */}
             <p 
-              className="font-fustat text-[#0F0F0F] font-normal text-[12px] sm:text-[14px] md:text-[16px] leading-[20px] sm:leading-[22px] md:leading-[24px] text-center sm:text-right"
+              className="font-fustat text-[#0F0F0F] font-normal text-[12px] sm:text-[14px] md:text-[16px] leading-[20px] sm:leading-[22px] md:leading-[24px] text-center"
               style={{ letterSpacing: '-0.5px' }}
             >
               © 2026 PGMaster. All Rights Reserved.
