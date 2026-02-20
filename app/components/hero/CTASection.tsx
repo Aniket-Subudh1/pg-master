@@ -4,7 +4,6 @@ import Link from "next/link";
 export default function CTASection() {
   return (
     <section className="w-full relative overflow-hidden">
-
       <div
         className="relative w-full min-h-[500px] sm:min-h-[600px] lg:min-h-[635px]"
         style={{
@@ -12,7 +11,6 @@ export default function CTASection() {
             "linear-gradient(180deg, #FFFFFF 0%, #bee2fbff 50%, #8fc7f2ff 100%)",
         }}
       >
-
         <div className="absolute left-[-60px] bottom-0 w-[905px] h-full max-h-[635px]">
           <Image
             src="/c1.png"
@@ -104,19 +102,15 @@ export default function CTASection() {
           </div>
         </div>
 
-        {/* Footer Section */}
         <div className="relative z-10 w-full bg-white border-t border-[#E5E5E5]">
           <div className="max-w-[1425px] mx-auto px-4 sm:px-6 py-6 sm:py-8">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-4">
-              {/* Left Text */}
               <p 
                 className="font-fustat text-[#0F0F0F] font-normal text-[12px] sm:text-[14px] md:text-[16px] leading-[20px] sm:leading-[22px] md:leading-[24px] text-center sm:text-left"
                 style={{ letterSpacing: '-0.5px' }}
               >
                 Made by Owners. Trusted by Owners.
               </p>
-
-              {/* Footer Links */}
               <div className="flex items-center gap-4 sm:gap-6">
                 <Link
                   href="/terms"
@@ -141,8 +135,6 @@ export default function CTASection() {
                 </Link>
               </div>
             </div>
-
-            {/* Copyright */}
             <p 
               className="font-fustat text-[#0F0F0F] font-normal text-[12px] sm:text-[14px] md:text-[16px] leading-[20px] sm:leading-[22px] md:leading-[24px] text-center"
               style={{ letterSpacing: '-0.5px' }}
