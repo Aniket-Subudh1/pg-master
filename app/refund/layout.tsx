@@ -4,7 +4,7 @@ import Script from "next/script";
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.pgmaster.in/"),
   title: "Refund & Cancellation Policy - PG Master | Return Policy",
-  description: "Understand PG Master's refund and cancellation policy. Learn about refund timelines (5-10 business days), subscription cancellations, failed transaction refunds, and payment processing terms. Contact support@pgmaster.in for assistance.",
+  description: "Understand PG Master's refund and cancellation policy. Learn about refund timelines (5-10 business days), subscription cancellations, failed transaction refunds, and payment processing terms. Contact info@pgmaster.in for assistance.",
   keywords: [
     "PG Master refund policy",
     "cancellation policy PG software",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: "https://www.pgmaster.in/refund",
     title: "Refund & Cancellation Policy - PG Master",
-    description: "Learn about refund processing, subscription cancellations, and transaction policies. Refunds processed within 5-10 business days. Email support@pgmaster.in for requests.",
+    description: "Learn about refund processing, subscription cancellations, and transaction policies. Refunds processed within 5-10 business days. Email info@pgmaster.in for requests.",
     siteName: "PG Master",
     images: [
       {
@@ -103,10 +103,10 @@ export default function RefundLayout({
               name: "Swastik Smart Solutions Private Limited",
               url: "https://www.pgmaster.in/",
               logo: "https://www.pgmaster.in/logo.png",
-              email: "support@pgmaster.in",
+              email: "info@pgmaster.in",
               contactPoint: {
                 "@type": "ContactPoint",
-                email: "support@pgmaster.in",
+                email: "info@pgmaster.in",
                 contactType: "Customer Support",
                 areaServed: "IN",
                 availableLanguage: ["English", "Hindi"],

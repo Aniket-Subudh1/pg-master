@@ -4,7 +4,7 @@
   --background: #ffffff;
   --foreground: #171717;
   --font-fustat: 'Fustat', system-ui, sans-serif;
-  --font-inter: var(--font-inter);
+  --font-inter: 'Inter', system-ui, sans-serif;
 }
 
 @theme inline {

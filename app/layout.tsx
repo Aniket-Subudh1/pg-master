@@ -1,13 +1,6 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
 import Script from "next/script";
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
+import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.pgmaster.in/"),
@@ -100,7 +93,10 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@700&display=swap" rel="stylesheet" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Fustat:wght@700&family=Inter:wght@400;500;600;700&display=swap"
+          rel="stylesheet"
+        />
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" href="/logo.png" />
         <link rel="apple-touch-icon" href="/logo.png" />
@@ -116,7 +112,7 @@ export default function RootLayout({
         <meta name="geo.position" content="20.2961;85.8245" />
         <meta name="ICBM" content="20.2961, 85.8245" />
       </head>
-      <body className={`${inter.variable} antialiased`}>
+      <body className="antialiased">
         {/* Organization Structured Data */}
         <Script
           id="organization-schema"
@@ -145,14 +141,14 @@ export default function RootLayout({
                 {
                   "@type": "ContactPoint",
                   contactType: "Customer Service",
-                  email: "support@pgmaster.in",
+                  email: "info@pgmaster.in",
                   areaServed: "IN",
                   availableLanguage: ["English", "Hindi"],
                 },
                 {
                   "@type": "ContactPoint",
                   contactType: "Sales",
-                  email: "support@pgmaster.in",
+                  email: "info@pgmaster.in",
                   areaServed: "IN",
                   availableLanguage: ["English", "Hindi"],
                 },

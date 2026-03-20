@@ -1,5 +1,5 @@
-import Navbar from "../components/Navbar";
 import Link from "next/link";
+import Navbar from "../components/Navbar";
 
 export default function TermsAndConditions() {
   return (
@@ -33,7 +33,7 @@ export default function TermsAndConditions() {
               <Link href="/" className="text-[#0F8BFF] hover:underline">
                 www.pgmaster.in
               </Link>
-              , mobile applications, and services operated by Swastik Smart Solutions Private Limited ("Company", "PGMASTER", "We", "Us", "Our").
+              , mobile applications, and services operated by PGMASTER ("Company", "PGMASTER", "We", "Us", "Our").
             </p>
             <p
               className="font-inter text-[#0F0F0F] font-normal text-[14px] leading-[22px] sm:text-[16px] sm:leading-[26px] mb-4"
@@ -49,23 +49,19 @@ export default function TermsAndConditions() {
             </p>
           </div>
 
-          {/* 1. Company Information */}
+          {/* 1. Platform Information */}
           <div className="bg-white/50 backdrop-blur-lg rounded-2xl p-6 sm:p-8 lg:p-10 shadow-[inset_0_4px_4px_0_rgba(255,255,255,0.35)] mb-6">
             <h2
               className="font-fustat text-[#0F0F0F] font-bold text-[20px] leading-[24px] sm:text-[24px] sm:leading-[30px] lg:text-[28px] lg:leading-[34px] mb-4"
               style={{ letterSpacing: "-1px" }}
             >
-              1. Company Information
+              1. Platform Information
             </h2>
             <div
               className="font-inter text-[#0F0F0F] font-normal text-[14px] leading-[22px] sm:text-[16px] sm:leading-[26px]"
               style={{ letterSpacing: "-0.3px" }}
             >
-              <p className="mb-2">Swastik Smart Solutions Private Limited</p>
-              <p className="mb-2">Plt No-296/300 Laxmi Sagar</p>
-              <p className="mb-2">Near Oppolo Pharmacy, Budheswari Colony</p>
-              <p className="mb-2">Khorda, Bhubaneswar, Orissa, India – 751006</p>
-              <p className="mt-4">
+              <p>
                 Website:{" "}
                 <Link href="/" className="text-[#0F8BFF] hover:underline">
                   www.pgmaster.in

@@ -1,5 +1,5 @@
-import Navbar from "../components/Navbar";
 import Link from "next/link";
+import Navbar from "../components/Navbar";
 
 export default function PrivacyPolicy() {
   return (
@@ -29,7 +29,7 @@ export default function PrivacyPolicy() {
               className="font-inter text-[#0F0F0F] font-normal text-[14px] leading-[22px] sm:text-[16px] sm:leading-[26px] mb-4"
               style={{ letterSpacing: "-0.3px" }}
             >
-              This Privacy Policy describes how PG MASTER ("Company", "We", "Us", "Our"), collects, uses, processes, stores, and protects information provided by users ("You", "Your", "User") when accessing or using our website{" "}
+              This Privacy Policy describes how PG MASTER ("We", "Us", "Our") collects, uses, processes, stores, and protects information provided by users ("You", "Your", "User") when accessing or using our website{" "}
               <Link href="/" className="text-[#0F8BFF] hover:underline">
                 www.pgmaster.in
               </Link>
@@ -467,10 +467,7 @@ export default function PrivacyPolicy() {
               className="font-inter text-[#0F0F0F] font-normal text-[14px] leading-[22px] sm:text-[16px] sm:leading-[26px]"
               style={{ letterSpacing: "-0.3px" }}
             >
-              <p className="font-semibold mb-2">SWASTIK SMART SOLUTIONS PRIVATE LIMITED</p>
-              <p className="mb-1">Plt No-296/300 Laxmi Sagar</p>
-              <p className="mb-1">Near Oppolo Pharmacy, Budheswari Colony</p>
-              <p>Khorda, Bhubaneswar, Orissa, India, 751006</p>
+              <p>Please contact us through the support channels available on the Platform.</p>
             </div>
           </div>
 

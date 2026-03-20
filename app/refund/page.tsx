@@ -1,5 +1,5 @@
-import Navbar from "../components/Navbar";
 import Link from "next/link";
+import Navbar from "../components/Navbar";
 
 export default function RefundPolicy() {
   return (
@@ -33,7 +33,7 @@ export default function RefundPolicy() {
               <Link href="/" className="text-[#0F8BFF] hover:underline">
                 www.pgmaster.in
               </Link>{" "}
-              ("Platform"), operated by Swastik Smart Solutions Private Limited ("Company", "PGMASTER", "We", "Us", "Our").
+              ("Platform"), operated by PGMASTER ("Company", "PGMASTER", "We", "Us", "Our").
             </p>
             <p
               className="font-inter text-[#0F0F0F] font-semibold text-[14px] leading-[22px] sm:text-[16px] sm:leading-[26px]"
@@ -261,8 +261,8 @@ export default function RefundPolicy() {
               style={{ letterSpacing: "-0.3px" }}
             >
               Email:{" "}
-              <a href="mailto:support@pgmaster.in" className="text-[#0F8BFF] hover:underline">
-                support@pgmaster.in
+              <a href="mailto:info@pgmaster" className="text-[#0F8BFF] hover:underline">
+                info@pgmaster
               </a>
             </p>
             <p
