@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.pgmaster.in/"),
@@ -61,5 +62,54 @@ export default function AccountDeletionLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    <>
+      {/* JSON-LD Structured Data for SEO */}
+      <Script
+        id="account-deletion-structured-data"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": "https://www.pgmaster.in/account-deletion#webpage",
+            url: "https://www.pgmaster.in/account-deletion",
+            name: "Account Deletion Request - PG Master",
+            description:
+              "Request deletion of your PG Master account and associated data. Learn about what data is removed and the processing timeline.",
+            inLanguage: "en-IN",
+            datePublished: "2026-02-12",
+            dateModified: "2026-02-12",
+            isPartOf: {
+              "@id": "https://www.pgmaster.in/#website",
+            },
+            breadcrumb: {
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                {
+                  "@type": "ListItem",
+                  position: 1,
+                  name: "Home",
+                  item: "https://www.pgmaster.in/",
+                },
+                {
+                  "@type": "ListItem",
+                  position: 2,
+                  name: "Account Deletion",
+                  item: "https://www.pgmaster.in/account-deletion",
+                },
+              ],
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "Swastik Smart Solutions Private Limited",
+              url: "https://www.pgmaster.in/",
+              logo: "https://www.pgmaster.in/logo.png",
+            },
+          }),
+        }}
+      />
+      {children}
+    </>
+  );
 }

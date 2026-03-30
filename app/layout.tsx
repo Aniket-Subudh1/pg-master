@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import Footer from "./components/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -251,17 +252,14 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
+              "@id": "https://www.pgmaster.in/#website",
               name: "PG Master",
               alternateName: "PGMASTER - PG and Hostel Management Software",
               url: "https://www.pgmaster.in/",
               description: "India's #1 PG and hostel management software. Effortlessly manage tenants, automate rent collection, and streamline operations. Trusted by 2,000+ PG owners.",
-              potentialAction: {
-                "@type": "SearchAction",
-                target: "https://www.pgmaster.in/search?q={search_term_string}",
-                "query-input": "required name=search_term_string",
-              },
               publisher: {
                 "@type": "Organization",
+                "@id": "https://www.pgmaster.in/#organization",
                 name: "Swastik Smart Solutions Private Limited",
               },
             }),
@@ -290,55 +288,17 @@ export default function RootLayout({
                 name: "PG and Hostel Management Software",
               },
               breadcrumb: {
+                "@type": "BreadcrumbList",
                 "@id": "https://www.pgmaster.in/#breadcrumb",
+                itemListElement: [
+                  {
+                    "@type": "ListItem",
+                    position: 1,
+                    name: "Home",
+                    item: "https://www.pgmaster.in/",
+                  },
+                ],
               },
-            }),
-          }}
-        />
-
-        {/* FAQ Schema for Homepage */}
-        <Script
-          id="faq-schema"
-          type="application/ld+json"
-          strategy="beforeInteractive"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              mainEntity: [
-                {
-                  "@type": "Question",
-                  name: "What is PG Master?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "PG Master is India's #1 PG and hostel management software that helps property owners efficiently manage tenants, automate rent collection, track payments, and streamline all operational tasks in one powerful platform.",
-                  },
-                },
-                {
-                  "@type": "Question",
-                  name: "How does PG Master help with rent collection?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "PG Master automates rent collection through integrated payment gateways, sends automated reminders to tenants, tracks payment history, and provides real-time analytics on collection rates and pending payments.",
-                  },
-                },
-                {
-                  "@type": "Question",
-                  name: "Is PG Master suitable for small hostels?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Yes, PG Master is designed for PG and hostel operators of all sizes - from small properties with 10 beds to large hostels managing 500+ tenants. Our flexible pricing and features scale with your needs.",
-                  },
-                },
-                {
-                  "@type": "Question",
-                  name: "How can I get started with PG Master?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "You can request a free demo by visiting our waitlist page. Our team will guide you through the setup process and help you get started within 24 hours.",
-                  },
-                },
-              ],
             }),
           }}
         />
@@ -396,6 +356,7 @@ export default function RootLayout({
         />
 
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -1,6 +1,20 @@
+import type { Metadata } from "next";
 import CalendarPanel from "../components/dashboard/CalendarPanel";
 import Sidebar from "../components/dashboard/Sidebar";
 import { AuthProvider } from '../context/AuthContext';
+
+export const metadata: Metadata = {
+  title: "Dashboard | PG Master",
+  description: "Manage your PG and hostel properties, tenants, rent collection, and operations from the PG Master dashboard.",
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+    },
+  },
+};
 
 export default function DashboardLayout({
   children,
